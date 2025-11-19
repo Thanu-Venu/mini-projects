@@ -23,15 +23,6 @@ Maintain clean commits & documentation
 🗓️ Project List (Updated with Replacements)
 Week 1 – Basics & DOM Manipulation
 Day 1 – Random Background Generator
-
-Replaced Digital Clock
-
-Random HEX/RGB background
-
-Button-based color generation
-
-Bonus: Auto-changing background
-
 Day 2 – Countdown Timer
 Day 3 – Stopwatch
 Day 4 – Random Quote Generator
@@ -40,15 +31,6 @@ Day 6 – Simple Calculator
 Day 7 – Tip Calculator
 Week 2 – Interactive UI & Animations
 Day 8 – Notes Taking App
-
-Replaced To-Do List
-
-Add, edit, delete notes
-
-Save notes using localStorage
-
-Bonus: Colored notes
-
 Day 9 – Password Strength Checker
 Day 10 – Image Slider / Carousel
 Day 11 – Animated Tabs
@@ -65,15 +47,6 @@ Day 20 – Color Guessing Game
 Day 21 – BMI Calculator
 Week 4 – Advanced & API Projects
 Day 22 – Anime/Movie Search App (API)
-
-Replaced Weather App
-
-Search movies or anime
-
-Show poster, rating, title
-
-Bonus: Pagination
-
 Day 23 – Currency Converter
 Day 24 – Random Joke Generator
 Day 25 – News Headlines App
