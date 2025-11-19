@@ -75,7 +75,7 @@ Day 30 – Portfolio Landing Page
 
 | Day | Project | Status |
 |-----|---------|--------|
-| 1 | Random Background Generator | ☐ Not Completed |
+| 1 | Random Background Generator | ✅ Completed |
 | 2 | Countdown Timer | ☐ Not Completed |
 | 3 | Stopwatch | ☐ Not Completed |
 | 4 | Random Quote Generator | ☐ Not Completed |
