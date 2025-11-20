@@ -22,7 +22,7 @@
 
 ##🗓️ Project List (Updated with Replacements)
 
-  1.Week 1 – Basics & DOM Manipulation<br>
+  1.Week 1 – Basics & DOM Manipulation<br><br>
 	  Day 1 – Random Background Generator<br>
 	  Day 2 – Countdown Timer<br>
 	  Day 3 – Stopwatch<br>
@@ -30,7 +30,7 @@
 	  Day 5 – Color Picker / Background Changer<br>
 	  Day 6 – Simple Calculator<br>
 	  Day 7 – Tip Calculator<br>
-   2.Week 2 – Interactive UI & Animations<br>
+   2.Week 2 – Interactive UI & Animations<br><br>
 		Day 8 – Notes Taking App<br>
 		Day 9 – Password Strength Checker<br>
 		Day 10 – Image Slider / Carousel<br>
@@ -38,7 +38,7 @@
 		Day 12 – Modal Popup<br>
 	  Day 13 – Tooltip Hover Effects<br>
 		Day 14 – Accordion Menu<br>
-3.Week 3 – Fun Projects & Games<br>
+3.Week 3 – Fun Projects & Games<br><br>
 		Day 15 – Rock Paper Scissors<br>
 		Day 16 – Dice Roller<br>
 		Day 17 – Memory Card Game<br>
@@ -46,7 +46,7 @@
 		Day 19 – Coin Flip Simulator<br>
 		Day 20 – Color Guessing Game<br>
 		Day 21 – BMI Calculator<br>
-4.Week 4 – Advanced & API Projects<br>
+4.Week 4 – Advanced & API Projects<br><br>
 		Day 22 – Anime/Movie Search App (API)<br>
 		Day 23 – Currency Converter<br>
 		Day 24 – Random Joke Generator<br>
