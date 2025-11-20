@@ -1,46 +1,51 @@
-🚀 Day 02 – Countdown Timer
+⏰ Countdown Timer
 
-  A simple and interactive Countdown Timer built using HTML, CSS, and JavaScript.
-  This project lets users set a future date/time and displays a live countdown showing days, hours, minutes, and seconds.
+A feature-rich Countdown Timer built with HTML, CSS, and JavaScript.
+This project is part of my 30-Day Mini Web Project Challenge.
 
-✨ Features
+🌟 Features
 
-  1.⏳ Live countdown updating every second
+✅ Select Date & Time for countdown
 
-  2.📅 User can select a specific date & time
+✅ Live countdown with Days, Hours, Minutes, Seconds
 
-  3.🚨 Shows “Time’s Up!” when countdown ends
-  
-  4.🎨 Clean and responsive UI
+✅ Pause & Resume timer
 
-  5.🕹️ Optional: Start / Reset buttons
+✅ Reset button
 
-🧠 How It Works
+✅ Sound alert when timer ends
 
-  1.User selects a future date and time.
+✅ Linear progress bar showing remaining time
 
-  2.JavaScript calculates the difference between now and the selected date.
+✅ Auto-save in localStorage – timer persists on page refresh
 
-  3.The difference is converted into days,hours,minutes,seconds
+✅ Responsive and clean UI
 
-  4.The numbers update every second using setInterval().
+🎨 Screenshots / Demo
 
-👨‍💻 Tech Stack
 
-  1.HTML – structure
+🛠️ How It Works
 
-  2.CSS – styling
+User selects a future date & time.
 
-  3.JavaScript – logic
+Click Start → timer begins counting down.
 
-🔥 Bonus Features You Can Add
+Pause stops the countdown; Resume continues it.
 
-  1.🌈 Background color changes automatically
+Reset clears the timer.
 
-  2.🎵 Alarm sound when time ends
+Sound alert plays when countdown reaches zero.
 
-  3.⚡ Animations on digits
+Linear progress bar decreases as time passes.
 
-  4.🎨 Dark/Light mode toggle
+Circular progress circle animates around the timer.
 
-  5.💫 Blur Glassmorphism design
+Timer automatically saves in browser storage and resumes on page refresh.
+
+⚡ Bonus Features
+
+Color-coded circular timer (optional, can be implemented with CSS/JS)
+
+Confetti animation when timer ends (can be added later)
+
+Multi-timer support (for multiple events at once)
