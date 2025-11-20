@@ -5,47 +5,46 @@ This project is part of my 30-Day Mini Web Project Challenge.
 
 🌟 Features
 
-✅ Select Date & Time for countdown
+  ✅ Select Date & Time for countdown
 
-✅ Live countdown with Days, Hours, Minutes, Seconds
+  ✅ Live countdown with Days, Hours, Minutes, Seconds
+ 
+  ✅ Pause & Resume timer
 
-✅ Pause & Resume timer
+  ✅ Reset button
 
-✅ Reset button
+  ✅ Sound alert when timer ends
 
-✅ Sound alert when timer ends
+  ✅ Linear progress bar showing remaining time
 
-✅ Linear progress bar showing remaining time
+  ✅ Auto-save in localStorage – timer persists on page refresh
 
-✅ Auto-save in localStorage – timer persists on page refresh
-
-✅ Responsive and clean UI
+  ✅ Responsive and clean UI
 
 🎨 Screenshots / Demo
-
+  <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/6b669331-1348-48f7-9113-1c9f8520db4e" />
+  <img width="1918" height="963" alt="image" src="https://github.com/user-attachments/assets/f7f4ed17-271c-4c76-8430-d1c166d13981" />
 
 🛠️ How It Works
 
-User selects a future date & time.
+  1.User selects a future date & time.
 
-Click Start → timer begins counting down.
+  2.Click Start → timer begins counting down.
 
-Pause stops the countdown; Resume continues it.
+  3.Pause stops the countdown; Resume continues it.
 
-Reset clears the timer.
+  4.Reset clears the timer.
 
-Sound alert plays when countdown reaches zero.
+  5.Sound alert plays when countdown reaches zero.
 
-Linear progress bar decreases as time passes.
+  6.Linear progress bar decreases as time passes.
 
-Circular progress circle animates around the timer.
-
-Timer automatically saves in browser storage and resumes on page refresh.
+  7.Timer automatically saves in browser storage and resumes on page refresh.
 
 ⚡ Bonus Features
 
-Color-coded circular timer (optional, can be implemented with CSS/JS)
+  Color-coded circular timer (optional, can be implemented with CSS/JS)
 
-Confetti animation when timer ends (can be added later)
+  Confetti animation when timer ends (can be added later)
 
-Multi-timer support (for multiple events at once)
+  Multi-timer support (for multiple events at once)
