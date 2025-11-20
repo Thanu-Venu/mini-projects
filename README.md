@@ -8,12 +8,12 @@
 
 🎯 Goals
 
-		1.Improve JavaScript fundamentals
-		2.Practice DOM manipulation and event handling
-		3.Strengthen CSS design and UI skills
-		4.Work with APIs
-		5.Build consistency by coding daily
-		6.Maintain clean commits & documentation
+1.Improve JavaScript fundamentals
+2.Practice DOM manipulation and event handling
+3.Strengthen CSS design and UI skills
+4.Work with APIs
+5.Build consistency by coding daily
+6.Maintain clean commits & documentation
 
 🗓️ Project List (Updated with Replacements)
 	  1.Week 1 – Basics & DOM Manipulation
