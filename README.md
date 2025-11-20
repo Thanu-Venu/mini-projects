@@ -29,7 +29,7 @@
 	  Day 4 – Random Quote Generator<br>
 	  Day 5 – Color Picker / Background Changer<br>
 	  Day 6 – Simple Calculator<br>
-	  Day 7 – Tip Calculator<br>
+	  Day 7 – Tip Calculator<br><br>
    2.Week 2 – Interactive UI & Animations<br><br>
 		Day 8 – Notes Taking App<br>
 		Day 9 – Password Strength Checker<br>
@@ -37,7 +37,7 @@
 		Day 11 – Animated Tabs<br>
 		Day 12 – Modal Popup<br>
 	  Day 13 – Tooltip Hover Effects<br>
-		Day 14 – Accordion Menu<br>
+		Day 14 – Accordion Menu<br><br>
 3.Week 3 – Fun Projects & Games<br><br>
 		Day 15 – Rock Paper Scissors<br>
 		Day 16 – Dice Roller<br>
@@ -45,7 +45,7 @@
 		Day 18 – Tic Tac Toe<br>
 		Day 19 – Coin Flip Simulator<br>
 		Day 20 – Color Guessing Game<br>
-		Day 21 – BMI Calculator<br>
+		Day 21 – BMI Calculator<br><br>
 4.Week 4 – Advanced & API Projects<br><br>
 		Day 22 – Anime/Movie Search App (API)<br>
 		Day 23 – Currency Converter<br>
