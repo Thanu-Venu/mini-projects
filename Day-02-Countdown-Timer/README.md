@@ -23,7 +23,7 @@ This project is part of my 30-Day Mini Web Project Challenge.
 
 🎨 Screenshots / Demo
   <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/6b669331-1348-48f7-9113-1c9f8520db4e" />
-  <img width="1918" height="963" alt="image" src="https://github.com/user-attachments/assets/f7f4ed17-271c-4c76-8430-d1c166d13981" />
+  <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/f7f4ed17-271c-4c76-8430-d1c166d13981" />
 
 🛠️ How It Works
 
@@ -48,3 +48,4 @@ This project is part of my 30-Day Mini Web Project Challenge.
   Confetti animation when timer ends (can be added later)
 
   Multi-timer support (for multiple events at once)
+
