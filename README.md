@@ -8,23 +8,23 @@
 
 ##🎯 Goals
 
-  1.Improve JavaScript fundamentals
-  2.Practice DOM manipulation and event handling
-  3.Strengthen CSS design and UI skills
-  4.Work with APIs
-  5.Build consistency by coding daily
+  1.Improve JavaScript fundamentals<br>
+  2.Practice DOM manipulation and event handling<br>
+  3.Strengthen CSS design and UI skills<br>
+  4.Work with APIs<br>
+  5.Build consistency by coding daily<br>
   6.Maintain clean commits & documentation
 
 ##🗓️ Project List (Updated with Replacements)
 
-  1.Week 1 – Basics & DOM Manipulation
+  1.Week 1 – Basics & DOM Manipulation<br>
 	  Day 1 – Random Background Generator
-		Day 2 – Countdown Timer
-		Day 3 – Stopwatch
+	  Day 2 – Countdown Timer
+	  Day 3 – Stopwatch
 	  Day 4 – Random Quote Generator
-		Day 5 – Color Picker / Background Changer
-		Day 6 – Simple Calculator
-		Day 7 – Tip Calculator
+	  Day 5 – Color Picker / Background Changer
+	  Day 6 – Simple Calculator
+	  Day 7 – Tip Calculator
    2.Week 2 – Interactive UI & Animations
 		Day 8 – Notes Taking App
 		Day 9 – Password Strength Checker
