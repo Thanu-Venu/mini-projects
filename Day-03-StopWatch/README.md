@@ -1,40 +1,72 @@
-⏱️ Stopwatch Mini Project
+⏱️ Advanced Stopwatch Project
 
-  A simple and clean Stopwatch Web Application built using HTML, CSS, and JavaScript.
-  This project is part of my 30-Day Mini Project Challenge.
+Overview
 
-🚀 Features
+  This is a feature-rich, responsive stopwatch built with HTML, CSS, and JavaScript.
+  It includes modern features such as lap history, light/dark modes, neon LED display, rotating progress circle, animations, and keyboard controls.
+  The stopwatch is stable and crystal clear, even as time increases. ✨
 
-1.Start the stopwatch
+⚡ Features
 
-2.Pause the stopwatch
+Start / Pause / Reset
 
-3.Reset the stopwatch
+  ▶️ Start the stopwatch
 
-4.Time format: MM : SS : MS (minutes, seconds, milliseconds)
+  ⏸️ Pause the stopwatch
 
-5.Smooth UI and easy-to-use buttons
+  🔄 Reset the stopwatch and clear lap history
 
-🛠️ Technologies Used
+Lap Time History
 
-1.HTML – structure
+  🏁 Add lap times while running
 
-2.CSS – styling and layout
+  Lap history is hidden initially and shows only when the Lap button is clicked
 
-3.JavaScript – stopwatch logic using setInterval()
+  💾 Lap times are stored in localStorage and cleared on reset
 
-📸 Screenshot
+Digital LED Display
 
-(Add screenshot after completing the project)
+  💡 Neon LED-style digital timer
 
-📘 How It Works
+  Glowing text with enhanced text-shadow effects
 
-1.When the user clicks Start, a timer runs every 10 milliseconds.
+  Timer is stable, centered, and never shakes
 
-2.When milliseconds reach 100, one second is added.
+Progress Circle
 
-3.When seconds reach 60, one minute is added.
+  🔵 Rotating circular border around the timer
 
-4.Pause stops the timer without resetting it.
+  Smooth rotation for a cool visual effect
 
-5.Reset stops and clears the time back to 00:00:00.
+  Timer text remains unaffected
+
+Dark / Light Mode
+
+  🌙 Dark mode / ☀️ Light mode
+
+  Optimized colors for visibility in both modes
+
+  Accent color changes dynamically based on mode
+
+Responsive Design
+
+  📱 Works on desktop and mobile
+
+  Timer stays centered, circle scales properly
+
+Keyboard Controls
+
+  ⌨️ Optional shortcuts for start, pause, reset, and lap
+
+Animations
+
+  🔄 Smooth progress circle rotation
+
+  ✨ Optional neon glow animation for the timer (pulsing effect)
+
+screen shots
+<img width="1918" height="1027" alt="image" src="https://github.com/user-attachments/assets/09b55983-d95e-4001-add4-535697aaf6dd" />
+<img width="1912" height="1026" alt="image" src="https://github.com/user-attachments/assets/1e048c58-654a-4274-bcac-9b6eec94f5d7" />
+<img width="1917" height="1031" alt="image" src="https://github.com/user-attachments/assets/0815db0e-6920-4586-9ed3-4f6133aa671a" />
+
+
