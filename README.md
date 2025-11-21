@@ -78,7 +78,7 @@
 |-----|---------|--------|
 | 1 | Random Background Generator | ✅ Completed |
 | 2 | Countdown Timer | ✅ Completed |
-| 3 | Stopwatch | ☐ Not Completed |
+| 3 | Stopwatch | ✅ Completed |
 | 4 | Random Quote Generator | ☐ Not Completed |
 | 5 | Color Picker / Background Changer | ☐ Not Completed |
 | 6 | Simple Calculator | ☐ Not Completed |
