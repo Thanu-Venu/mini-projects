@@ -1,47 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
 body {
     font-family: Arial, sans-serif;
-    background: #f7f7f7;
+    background: var(--bg);
+    color: var(--text);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    transition: 0.3s;
+}
+
+/* Light Mode */
+:root {
+    --bg: #f7f7f7;           /* background */
+    --text: #111;            /* text */
+    --card: #fff;            /* card/container */
+    --btn: #333;             /* buttons */
+    --accent: #0077cc;       /* for circle & timer */
+}
+
+/* Dark Mode */
+.dark {
+    --bg: #111;
+    --text: #fff;
+    --card: #222;
+    --btn: #eee;
+    --accent: cyan;
 }
 
 .container {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
     text-align: center;
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-#display {
-    font-size: 48px;
-    margin: 20px 0;
-    letter-spacing: 2px;
-    font-weight: bold;
+
+.progress-wrapper {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 18px;
-    margin: 0 10px;
-    cursor: pointer;
+.progress-ring {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: var(--accent) transparent var(--accent) transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--accent);
+    z-index: 1;
+    animation: glow 2s infinite;
+}
+
+.inner-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 250px;
+    text-align: center;
+}
+
+.digital {
+    font-size: 45px;
+    font-family: 'Courier New', sans-serif;
+    font-variant-numeric: tabular-nums; /* Ensures digits are fixed width */
+    color: var(--accent);
+     text-shadow:
+        0 0 5px var(--accent),
+        0 0 10px var(--accent),
+        0 0 15px var(--accent),
+        0 0 20px var(--accent),
+        0 0 30px var(--accent);
+    
+    transform: translateZ(0);  /* forces GPU layer */
+    backface-visibility: hidden;
+    will-change: transform;
+}
+
+
+
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 10px cyan; }
+    50% { box-shadow: 0 0 30px cyan; }
+    100% { box-shadow: 0 0 10px cyan; }
+}
+
+.buttons button {
+    padding: 10px 15px;
+    margin: 10px 5px;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-#start {
-    background: green;
-    color: white;
+#laps {
+    list-style: none;
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 0;
 }
 
-#pause {
-    background: orange;
-    color: white;
+#laps li {
+    padding: 6px;
+    margin: 4px;
+    background: var(--btn);
+    color: var(--card);
+    border-radius: 5px;
 }
 
-#reset {
-    background: red;
-    color: white;
+/* Responsive */
+@media (max-width: 480px) {
+    .digital {
+        font-size: 30px;
+    }
+    .progress-circle {
+        width: 150px;
+        height: 150px;
+    }
 }
