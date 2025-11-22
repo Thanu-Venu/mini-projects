@@ -14,12 +14,14 @@ This project is part of my **30 Days Web Development Challenge**.
 - 🔊 Text-to-Speech (Listen to quote)  
 - 💾 Save favourite quotes (localStorage)   
 - 🎛 Keyboard shortcuts (Space → New Quote)  
-- 📱 Fully responsive for mobile & desktop  
+- 📱 Fully responsive for mobile & desktop
+- 🎨 Animated quote card with fade effects  
 
 ---
 
 ## 📸 Preview  
-<img width="1918" height="1031" alt="image" src="https://github.com/user-attachments/assets/a23ee7b3-3451-42c1-9e94-94f92ff39576" />
+<img width="1917" height="975" alt="image" src="https://github.com/user-attachments/assets/c3b49fd7-7cda-4228-9486-d567b7b6b6da" />
+<img width="1907" height="976" alt="image" src="https://github.com/user-attachments/assets/cc3bca10-bd3e-43b6-8b1e-6c5213464bc9" />
 <img width="1913" height="1033" alt="image" src="https://github.com/user-attachments/assets/c9285396-1f8f-4a03-ae1b-14f1afb55a24" />
 
 ---
