@@ -1,18 +1,25 @@
 const quotetxt=document.getElementById("quote");
 const authortxt=document.getElementById("author");
 const newquotebtn=document.getElementById("new-quote");
-
+const quoteBox=document.getElementById("quote-box");
 
 async function getQuote() {
+    quoteBox.classList.remove("fade-in");
+    quoteBox.classList.add("fade-out");
+
+
     quotetxt.innerText = "Loading...";
     authortxt.innerText = "";
 
     try {
         const response = await fetch("https://dummyjson.com/quotes/random");
         const data = await response.json();
-
+        setTimeout(() => {
         quotetxt.innerText = data.quote;
         authortxt.innerText = "- " + data.author;
+        quoteBox.classList.remove("fade-out");
+        quoteBox.classList.add("fade-in");
+        }, 300); // Match with CSS transition duration
 
     } catch (error) {
         quotetxt.innerText = "Oops! Something went wrong.";
@@ -85,3 +92,11 @@ function clearSavedQuotes() {
     savedQuotes.innerHTML = ""; // remove from page
     savedQuotes.innerText = "No saved quotes yet.";
 }
+
+document.body.addEventListener("keydown", (e) => {
+    if (e.code === "Space") {
+        getQuote();
+    }
+});
+
+displaySavedQuotes();
