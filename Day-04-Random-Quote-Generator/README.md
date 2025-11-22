@@ -8,20 +8,19 @@ This project is part of my **30 Days Web Development Challenge**.
 ## ✨ Features
 
 - 🎲 Generate random quotes with one click  
-- 🌐 Fetch quotes from a public API (Quotable API)  
+- 🌐 Fetch quotes from a public API (dummyjson.com API)  
 - 🌙 Light/Dark mode toggle  
 - 📋 Copy quote to clipboard  
 - 🔊 Text-to-Speech (Listen to quote)  
-- 💾 Save favourite quotes (localStorage)  
-- 🎨 Animated quote card with fade effects  
+- 💾 Save favourite quotes (localStorage)   
 - 🎛 Keyboard shortcuts (Space → New Quote)  
 - 📱 Fully responsive for mobile & desktop  
-- 🔄 Loader animation while fetching  
 
 ---
 
 ## 📸 Preview  
-(Add screenshots here)
+<img width="1918" height="1031" alt="image" src="https://github.com/user-attachments/assets/a23ee7b3-3451-42c1-9e94-94f92ff39576" />
+<img width="1913" height="1033" alt="image" src="https://github.com/user-attachments/assets/c9285396-1f8f-4a03-ae1b-14f1afb55a24" />
 
 ---
 
@@ -38,7 +37,7 @@ This project is part of my **30 Days Web Development Challenge**.
 
 ## ⚙️ How It Works
 
-1. App fetches a random quote from the **Quotable API**  
+1. App fetches a random quote from the **dummyjson.com API**  
 2. Displays the quote + author  
 3. User can:
    - Copy the quote  
