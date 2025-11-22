@@ -1,8 +1,11 @@
+/* =========================
+   Reset & Base Styles
+   ========================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
 body {
@@ -10,49 +13,166 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f5f5f5;
+    background-color: #f5f5f5;
+    color: #000000;
+    transition: background 0.5s ease, color 0.5s ease;
 }
 
+/* =========================
+   Container & Card
+   ========================= */
 .container {
     width: 90%;
-    max-width: 500px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
+    max-width: 550px;
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 15px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+    position: relative;
+    transition: background 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
 }
 
-h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
+/* Quote Card Animation */
 .quote-box {
     margin: 20px 0;
+    padding: 15px 20px;
+    border-left: 5px solid #007bff;
+    border-radius: 10px;
+    background: rgba(0, 123, 255, 0.05);
+    position: relative;
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
 
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+/* Quote Text */
 #quote {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: inherit;
+    transition: color 0.5s ease;
 }
 
+/* Author */
 #author {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 400;
     color: #555;
+    transition: color 0.5s ease;
 }
 
+/* =========================
+   Buttons
+   ========================= */
 button {
-    margin-top: 20px;
+    margin: 10px 5px 0 5px;
     padding: 10px 20px;
     font-size: 16px;
-    background: #007bff;
     border: none;
-    border-radius: 5px;
-    color: white;
+    border-radius: 8px;
     cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 
-button:hover {
+/* Primary Button */
+#new-quote-btn {
+    background: #007bff;
+    color: #ffffff;
+}
+
+#new-quote-btn:hover {
     background: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Secondary Buttons */
+button.secondary {
+    background: #ffffff;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+button.secondary:hover {
+    background: #007bff;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   Loader Animation
+   ========================= */
+#loader {
+    font-size: 20px;
+    margin: 20px 0;
+    display: none;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+
+/* =========================
+   Light / Dark Mode
+   ========================= */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .container {
+    background-color: #1e1e1e;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .quote-box {
+    background: rgba(255, 255, 255, 0.05);
+    border-left-color: #00e0ff;
+}
+
+body.dark-mode #author {
+    color: #aaa;
+}
+
+body.dark-mode #new-quote-btn {
+    background: #00e0ff;
+    color: #121212;
+}
+
+body.dark-mode #new-quote-btn:hover {
+    background: #00b8cc;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 15px;
+    }
+    #quote {
+        font-size: 18px;
+    }
+    #author {
+        font-size: 16px;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
 }
