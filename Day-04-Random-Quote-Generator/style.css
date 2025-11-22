@@ -9,13 +9,13 @@
 }
 
 body {
-    
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding: 20px;
     background-color: #f5f5f5;
-    color: #000000;
+    color: #000;
     transition: background 0.5s ease, color 0.5s ease;
 }
 
@@ -23,38 +23,48 @@ body {
    Container & Card
    ========================= */
 .container {
-   
     width: 90%;
-    max-width: 550px;
+    max-width: 600px;
     background: #ffffff;
     padding: 30px 25px;
-    border-radius: 15px;
+    border-radius: 20px;
     text-align: center;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
     position: relative;
     transition: background 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
 }
 
-/* Quote Card Animation */
+/* =========================
+   Quote Box
+   ========================= */
 .quote-box {
-    
-    margin: 20px 0;
-    padding: 15px 20px;
-    border-left: 5px solid #007bff;
-    border-radius: 10px;
+    margin: 25px 0;
+    padding: 20px 25px;
+    border-left: 6px solid #007bff;
+    border-radius: 12px;
     background: rgba(0, 123, 255, 0.05);
     position: relative;
     opacity: 1;
-    transition: opacity 0.5s ease;
+    transition: opacity 1s ease-in-out, transform 0.5s ease;
+}
+
+/* =========================
+   Fade Animations
+   ========================= */
+.fade-in {
+    opacity: 1;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 .fade-out {
     opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-.fade-in {
-    opacity: 1;
-    transition: opacity 0.5s ease-in;
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-15px) scale(0.98); }
+    50% { opacity: 0.5; transform: translateY(-7px) scale(0.99); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 /* Quote Text */
@@ -78,40 +88,60 @@ body {
 /* =========================
    Buttons
    ========================= */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
 button {
-    margin: 10px 5px 0 5px;
-    padding: 10px 20px;
+    padding: 10px 18px;
     font-size: 16px;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     font-weight: 500;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.05);
 }
 
 /* Primary Button */
-#new-quote-btn {
+#new-quote {
     background: #007bff;
     color: #ffffff;
 }
 
-#new-quote-btn:hover {
+#new-quote:hover {
     background: #0056b3;
-    transform: translateY(-2px);
 }
 
 /* Secondary Buttons */
-button.secondary {
+button.secondary,
+#speak-btn,
+#copy-btn,
+#save-btn,
+#toggle-mode,
+#clear-btn {
     background: #ffffff;
     color: #007bff;
     border: 2px solid #007bff;
 }
 
-button.secondary:hover {
+button.secondary:hover,
+#speak-btn:hover,
+#copy-btn:hover,
+#save-btn:hover,
+#toggle-mode:hover,
+#clear-btn:hover {
     background: #007bff;
-    color: #ffffff;
-    transform: translateY(-2px);
+    color: #fff;
+    transform: translateY(-3px) scale(1.05);
 }
 
 /* =========================
@@ -152,47 +182,60 @@ body.dark-mode #author {
     color: #aaa;
 }
 
-body.dark-mode #new-quote-btn {
+body.dark-mode #new-quote {
     background: #00e0ff;
     color: #121212;
 }
 
-body.dark-mode #new-quote-btn:hover {
+body.dark-mode #new-quote:hover {
     background: #00b8cc;
 }
 
+body.dark-mode button.secondary,
+body.dark-mode #speak-btn,
+body.dark-mode #copy-btn,
+body.dark-mode #save-btn,
+body.dark-mode #toggle-mode,
+body.dark-mode #clear-btn {
+    background: #333;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+body.dark-mode button.secondary:hover,
+body.dark-mode #speak-btn:hover,
+body.dark-mode #copy-btn:hover,
+body.dark-mode #save-btn:hover,
+body.dark-mode #toggle-mode:hover,
+body.dark-mode #clear-btn:hover {
+    background: #00e0ff;
+    color: #121212;
+    border: 2px solid #00e0ff;
+}
+
 /* =========================
-   Responsive
+   Saved Quotes
    ========================= */
-@media (max-width: 600px) {
-    .container {
-        padding: 20px 15px;
-    }
-    #quote {
-        font-size: 18px;
-    }
-    #author {
-        font-size: 16px;
-    }
-    button {
-        font-size: 14px;
-        padding: 8px 15px;
-    }
+#saved-quotes {
+    max-height: 250px;
+    overflow-y: auto;
+    margin-top: 15px;
+    padding-top: 10px;
+    text-align: left;
+    scroll-behavior: smooth;
 }
 
 .saved-quote {
     background: rgba(0,123,255,0.05);
     border-left: 5px solid #007bff;
-    padding: 10px 15px;
+    padding: 12px 15px;
     margin: 10px 0;
     border-radius: 8px;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-#saved-quotes{
-    max-height: 200px;
-    overflow-y: auto;
-    margin-top: 15px;
+.saved-quote p {
+    margin: 5px 0;
 }
 
 body.dark-mode .saved-quote {
@@ -200,18 +243,12 @@ body.dark-mode .saved-quote {
     border-left-color: #00e0ff;
 }
 
-.quote-box {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-@media (max-width: 600px) {
-    #quote-card {
-        font-size: 1rem;
-        padding: 15px;
-    }
+/* =========================
+   Responsive
+   ========================= */
+@media(max-width: 600px) {
+    #quote { font-size: 18px; }
+    #author { font-size: 16px; }
+    button { font-size: 14px; padding: 8px 12px; }
+    .container { padding: 20px 15px; }
 }
