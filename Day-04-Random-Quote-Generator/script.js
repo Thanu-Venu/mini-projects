@@ -48,3 +48,40 @@ speakBtn.addEventListener("click", () => {
     speechSynthesis.cancel(); // stop previous
     speechSynthesis.speak(utterance);
 });
+
+const savedQuotes=document.getElementById("saved-quotes");
+
+function displaySavedQuotes() {
+    let favourites = JSON.parse(localStorage.getItem("favourites")) || [];
+    savedQuotes.innerHTML = "";
+
+    if (favourites.length === 0) {
+        savedQuotes.innerText = "No saved quotes yet.";
+        return;
+    }
+
+    favourites.forEach((item, index) => {
+        const quoteDiv = document.createElement("div");
+        quoteDiv.classList.add("saved-quote");
+        quoteDiv.innerHTML = `<p>${item.quote}</p><p><strong>- ${item.author}</strong></p>`;
+        savedQuotes.appendChild(quoteDiv);
+    });
+}
+
+const saveBtn=document.getElementById("save-btn");
+
+saveBtn.addEventListener("click",()=>{
+    let favourites=JSON.parse(localStorage.getItem("favourites")) || [];
+    favourites.push({quote:quotetxt.innerText,author:authortxt.innerText});
+    localStorage.setItem("favourites",JSON.stringify(favourites));
+    alert("Quote saved to favourites!");
+    displaySavedQuotes();
+});
+
+const clearBtn = document.getElementById("clear-btn");
+clearBtn.addEventListener("click", clearSavedQuotes);
+function clearSavedQuotes() {
+    localStorage.removeItem("favourites"); // or localStorage.clear()
+    savedQuotes.innerHTML = ""; // remove from page
+    savedQuotes.innerText = "No saved quotes yet.";
+}

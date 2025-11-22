@@ -9,6 +9,7 @@
 }
 
 body {
+    
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -22,6 +23,7 @@ body {
    Container & Card
    ========================= */
 .container {
+   
     width: 90%;
     max-width: 550px;
     background: #ffffff;
@@ -35,6 +37,7 @@ body {
 
 /* Quote Card Animation */
 .quote-box {
+    
     margin: 20px 0;
     padding: 15px 20px;
     border-left: 5px solid #007bff;
@@ -174,5 +177,41 @@ body.dark-mode #new-quote-btn:hover {
     button {
         font-size: 14px;
         padding: 8px 15px;
+    }
+}
+
+.saved-quote {
+    background: rgba(0,123,255,0.05);
+    border-left: 5px solid #007bff;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+#saved-quotes{
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+body.dark-mode .saved-quote {
+    background: rgba(255,255,255,0.05);
+    border-left-color: #00e0ff;
+}
+
+.quote-box {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 600px) {
+    #quote-card {
+        font-size: 1rem;
+        padding: 15px;
     }
 }
