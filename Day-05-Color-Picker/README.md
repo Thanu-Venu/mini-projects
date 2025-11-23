@@ -72,3 +72,11 @@ Technology	Purpose
 4.Generate random colors using 🎲
 
 5.Save your colors or generate gradients (optional)
+
+screenshots
+<img width="1910" height="981" alt="image" src="https://github.com/user-attachments/assets/db1df86c-68fb-4fa0-b3ed-75f499308c9e" />
+<img width="1906" height="973" alt="image" src="https://github.com/user-attachments/assets/73a7f9af-96d0-4ef1-b78a-a0c769b5e38e" />
+<img width="1907" height="960" alt="image" src="https://github.com/user-attachments/assets/6f5c4572-a092-4d4e-b86c-704bf4a4a85e" />
+<img width="1910" height="980" alt="image" src="https://github.com/user-attachments/assets/91840c7c-e0de-4e31-bb89-d860f3be570b" />
+
+
