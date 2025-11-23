@@ -80,7 +80,7 @@
 | 2 | Countdown Timer | ✅ Completed |
 | 3 | Stopwatch | ✅ Completed |
 | 4 | Random Quote Generator | ✅ Completed |
-| 5 | Color Picker / Background Changer | ☐ Not Completed |
+| 5 | Color Picker / Background Changer | ✅ Completed |
 | 6 | Simple Calculator | ☐ Not Completed |
 | 7 | Tip Calculator | ☐ Not Completed |
 | 8 | Notes Taking App | ☐ Not Completed |
