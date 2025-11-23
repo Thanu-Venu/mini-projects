@@ -7,67 +7,68 @@ Perfect for practicing HTML, CSS, and JavaScript! 🌈✨
 🌟 Features
 🎯 Core Features
 
-🎨 Live Color Picker (<input type="color">)
+-🎨 Live Color Picker (<input type="color">)
 
-🟥 Real-time color preview box
+-🟥 Real-time color preview box
 
-🔢 Shows HEX and RGB color values
+-🔢 Shows HEX and RGB color values
 
-📋 One-click Copy to Clipboard
+-📋 One-click Copy to Clipboard
 
-💻 Clean, minimal, responsive UI
+-💻 Clean, minimal, responsive UI
 
 ⚡ Intermediate Features
 
-🎲 Random Color Generator
+-🎲 Random Color Generator
 
-💬 “Copied!” toast notification
+-💬 “Copied!” toast notification
 
-🌗 Light & Dark Mode toggle
+-🌗 Light & Dark Mode toggle
 
-♻️ Reset button
+-♻️ Reset button
 
-🔍 Detects basic color names
+-🔍 Detects basic color names
 
 🚀 Advanced Features
 
-📌 Save favorite colors (Color Palette)
+-📌 Save favorite colors (Color Palette)
 
-💾 Store palette using localStorage
+-💾 Store palette using localStorage
 
-🖼 Download palette as image
+-🖼 Download palette as image
 
-📄 Export colors as .txt / .json
+-📄 Export colors as .txt / .json
 
-🌈 Gradient Generator (two-color gradients)
+-🌈 Gradient Generator (two-color gradients)
 
-🎚 HSB sliders (Hue, Saturation, Brightness)
+-🎚 HSB sliders (Hue, Saturation, Brightness)
 
-🟪 Generate tints & shades
+-🟪 Generate tints & shades
 
 🧠 Expert-Level Ideas
 
-🧿 Custom color wheel UI
+-🧿 Custom color wheel UI
 
-📦 Drag-and-drop palette organizer
+-📦 Drag-and-drop palette organizer
 
-⚖️ Real-time contrast checker (WCAG AA/AAA)
+-⚖️ Real-time contrast checker (WCAG AA/AAA)
 
-🕒 Color history (recent 10–20 colors)
+-🕒 Color history (recent 10–20 colors)
 
 🛠️ Tech Stack
 Technology	Purpose
-🌐 HTML5	Structure
-🎨 CSS3	Styling & UI
-⚙️ JavaScript	Logic, events, color generation
+-🌐 HTML5	Structure
+-🎨 CSS3	Styling & UI
+-⚙️ JavaScript	Logic, events, color generation
+
 🚀 How to Use
 
-Pick a color using the color selector 🎨
+1.Pick a color using the color selector 🎨
 
-Watch the preview update instantly 🟥
+2.Watch the preview update instantly 🟥
 
-Copy HEX/RGB using 📋 Copy
+3.Copy HEX/RGB using 📋 Copy
 
-Generate random colors using 🎲
+4.Generate random colors using 🎲
 
-Save your colors or generate gradients (optional)
+5.Save your colors or generate gradients (optional)
