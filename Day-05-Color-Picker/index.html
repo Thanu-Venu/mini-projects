@@ -1,28 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Picker</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Advanced Color Picker</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="app">
+    <header>
+      <h1>🎨 Advanced Color Picker</h1>
+      <div class="controls-top">
+        <button id="themeToggle">🌗 Toggle Theme</button>
+        <button id="resetBtn">♻️ Reset</button>
+      </div>
+    </header>
 
-    <div class="container">
-        <h1>🎨 Color Picker</h1>
+    <main>
+      <section class="left">
+        <div class="preview" id="colorPreview"></div>
 
-        <div class="color-preview" id="colorPreview"></div>
+        <div class="picker-row">
+          <label>Pick color</label>
+          <input type="color" id="colorPicker" value="#ff5733" />
+          <input type="text" id="hexInput" maxlength="7" />
+        </div>
 
-        <input type="color" id="colorPicker" value="#ff5733">
+        <div class="rgb-row">
+          <div>RGB: <span id="rgbVal"></span></div>
+          <div>HSL: <span id="hslVal"></span></div>
+          <div>HSB: <span id="hsbVal"></span></div>
+        </div>
 
-        <p class="code-text">HEX: <span id="colorCode">#ff5733</span></p>
+        <div class="buttons">
+          <button id="copyBtn">📋 Copy HEX</button>
+          <button id="randomBtn">🎲 Random</button>
+          <button id="saveBtn">📌 Save to Palette</button>
+          <button id="exportTxtBtn">📄 Export .txt</button>
+          <button id="exportJsonBtn">📄 Export .json</button>
+          <button id="downloadPaletteBtn">🖼 Download Palette Image</button>
+        </div>
 
-        <button id="copyBtn">📋 Copy</button>
-        <button id="randomBtn">🎲 Random Color</button>
+        <div class="color-name">Name: <span id="colorName">—</span></div>
+        <div class="contrast">Contrast ratio: <span id="contrastVal">—</span> (<span id="contrastPass">—</span>)</div>
 
-        <p id="msg" class="message"></p>
-    </div>
+        <section class="sliders">
+          <h3>🎚 H / S / B</h3>
+          <label>Hue <input type="range" id="hSlider" min="0" max="360" /></label>
+          <label>Saturation <input type="range" id="sSlider" min="0" max="100" /></label>
+          <label>Brightness <input type="range" id="bSlider" min="0" max="100" /></label>
+        </section>
 
-    <script src="script.js"></script>
+        <section class="gradient">
+          <h3>🌈 Gradient Generator</h3>
+          <input type="color" id="gLeft" value="#ff5733" />
+          <input type="color" id="gRight" value="#3b82f6" />
+          <button id="applyGradient">Apply Gradient</button>
+          <div id="gradientPreview" class="gradient-preview"></div>
+          <input id="gradientCss" readonly />
+        </section>
+
+        <section class="tints">
+          <h3>🟪 Tints & Shades</h3>
+          <div id="tintsRow" class="swatch-row"></div>
+        </section>
+      </section>
+
+      <aside class="right">
+        <section class="palette">
+          <h3>Saved Palette</h3>
+          <div id="paletteList" class="swatch-list" ondragover="event.preventDefault()"></div>
+          <div class="palette-actions">
+            <button id="clearPaletteBtn">🗑 Clear Palette</button>
+          </div>
+        </section>
+
+        <section class="history">
+          <h3>🕒 History (last 20)</h3>
+          <div id="historyList" class="swatch-list"></div>
+        </section>
+
+        <section class="wheel">
+          <h3>🧿 Color Wheel</h3>
+          <canvas id="wheelCanvas" width="240" height="240"></canvas>
+          <div><button id="useWheel">Use Wheel Pick</button></div>
+        </section>
+
+        <section class="name-detect">
+          <h3>🔍 Detect Closest Name</h3>
+          <button id="detectNameBtn">Detect Name</button>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="status" id="msg"></div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
