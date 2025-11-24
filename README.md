@@ -81,7 +81,7 @@
 | 3 | Stopwatch | ✅ Completed |
 | 4 | Random Quote Generator | ✅ Completed |
 | 5 | Color Picker / Background Changer | ✅ Completed |
-| 6 | Simple Calculator | ☐ Not Completed |
+| 6 | Simple Calculator | ✅ Completed |
 | 7 | Tip Calculator | ☐ Not Completed |
 | 8 | Notes Taking App | ☐ Not Completed |
 | 9 | Password Strength Checker | ☐ Not Completed |
