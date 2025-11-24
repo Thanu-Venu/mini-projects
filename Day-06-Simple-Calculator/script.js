@@ -2,6 +2,19 @@ let display=document.getElementById("display");
 let toggleHistoryBtn = document.getElementById("toggleHistory");
 let historyBox = document.getElementById("historyBox");
 
+let scientificToggle = document.getElementById("scientificToggle");
+let scientificButtons = document.getElementById("scientificButtons");
+
+scientificToggle.addEventListener("click", () => {
+    if (scientificButtons.style.display === "none") {
+        scientificButtons.style.display = "grid"; // show buttons
+        scientificToggle.textContent = "Scientific";
+    } else {
+        scientificButtons.style.display = "none"; // hide buttons
+        scientificToggle.textContent = "Scientific";
+    }
+});
+
 toggleHistoryBtn.addEventListener("click", function () {
     if (historyBox.style.display === "none" || historyBox.style.display === "") {
         historyBox.style.display = "block";
@@ -80,3 +93,66 @@ toggleBtn.addEventListener("click",()=>{
     document.body.classList.toggle("dark");
     toggleBtn.textContent=document.body.classList.contains("dark")? "☀️":"🌙";
 });
+
+// Apply scientific function
+function applyFunction(fn) {
+    let val = parseFloat(display.value);
+    if (isNaN(val)) return;
+
+    switch(fn) {
+        case 'sin':
+            display.value = Math.sin(val);
+            break;
+        case 'cos':
+            display.value = Math.cos(val);
+            break;
+        case 'tan':
+            display.value = Math.tan(val);
+            break;
+        case 'log':
+            display.value = Math.log10(val);
+            break;
+        case 'ln':
+            display.value = Math.log(val);
+            break;
+    }
+}
+
+// Add constants
+function appendConstant(constant) {
+    switch(constant) {
+        case 'pi':
+            display.value += Math.PI;
+            break;
+        case 'e':
+            display.value += Math.E;
+            break;
+    }
+}
+
+// Factorial
+function factorial() {
+    let n = parseInt(display.value);
+    if (isNaN(n) || n < 0) return;
+    let fact = 1;
+    for (let i=1; i<=n; i++) fact *= i;
+    display.value = fact;
+}
+
+// Power xⁿ
+function power() {
+    let base = parseFloat(display.value);
+    let exponent = prompt("Enter exponent value:");
+    if (exponent !== null) {
+        display.value = Math.pow(base, parseFloat(exponent));
+    }
+}
+
+// ± Toggle
+function toggleSign() {
+    if (display.value.startsWith('-')) {
+        display.value = display.value.slice(1);
+    } else {
+        display.value = '-' + display.value;
+    }
+}

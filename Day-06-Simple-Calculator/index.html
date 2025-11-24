@@ -27,7 +27,7 @@
         </div>
 
         <div class="buttons">
-
+            <button id="scientificToggle" class="btn special">Scientific</button>
             <button class="btn func" onclick="clearAll()">AC</button>
             <button class="btn func" onclick="clearOne()">C</button>
             <button class="btn operator" onclick="appendValue('%')">%</button>
@@ -53,10 +53,25 @@
 
             <button class="btn special" onclick="square()">x²</button>
             <button class="btn special" onclick="squareRoot()">√</button>
-
             <button class="btn equal" onclick="calculate()">=</button>
 
         </div>
+
+        <div id="scientificButtons" style="display:none;">
+            <button class="btn special" onclick="applyFunction('sin')">sin</button>
+            <button class="btn special" onclick="applyFunction('cos')">cos</button>
+            <button class="btn special" onclick="applyFunction('tan')">tan</button>
+            <button class="btn special" onclick="applyFunction('log')">log</button>
+            <button class="btn special" onclick="applyFunction('ln')">ln</button>
+            <button class="btn special" onclick="appendConstant('pi')">π</button>
+            <button class="btn special" onclick="appendConstant('e')">e</button>
+            <button class="btn special" onclick="factorial()">n!</button>
+            <button class="btn special" onclick="power()">xⁿ</button>
+            <button class="btn special" onclick="toggleSign()">±</button>
+        </div>
+
+
+
     </div>
 
     <script src="script.js"></script>
