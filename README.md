@@ -106,3 +106,13 @@
 | 28 | Stop Motion Animation | ☐ Not Completed |
 | 29 | Form Validation Project | ☐ Not Completed |
 | 30 | Portfolio Landing Page | ☐ Not Completed |
+
+🤝 Contributions
+
+This is part of my personal learning journey.
+Suggestions, improvements, and forks are always welcome ❤️.
+
+⭐ Show Your Support
+
+If you like this project, please ⭐ the repository!
+Your support motivates me to continue my 30-day challenge 💪🔥
