@@ -110,3 +110,9 @@ Suggestions, improvements, and forks are always welcome ❤️.
 
 If you like this project, please ⭐ the repository!
 Your support motivates me to continue my 30-day challenge 💪🔥
+
+screenshots
+<img width="1918" height="1032" alt="image" src="https://github.com/user-attachments/assets/a075482f-2af0-45a1-b775-afd02bf55f24" />
+<img width="1911" height="975" alt="image" src="https://github.com/user-attachments/assets/875eb0e6-a70d-45c4-97dc-df273987faf5" />
+
+
