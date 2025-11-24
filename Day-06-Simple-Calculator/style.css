@@ -10,15 +10,52 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f4f4f4;
+    background: var(--bg);
+    transition: 0.3s;
+}
+
+/* THEME VARIABLES */
+:root {
+    --bg: #f4f4f4;
+    --calc-bg: #ffffff;
+    --text: #000;
+    --btn-bg: #ddd;
+    --btn-text: #000;
+    --operator-bg: #ff9500;
+    --equal-bg: #36c41c;
+}
+
+.dark {
+    --bg: #181818;
+    --calc-bg: #222;
+    --text: #fff;
+    --btn-bg: #333;
+    --btn-text: #fff;
+    --operator-bg: #ff9500;
+    --equal-bg: #28a81a;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#toggleTheme {
+    padding: 10px 15px;
+    border: none;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .calculator {
-    width: 320px;
-    background: #222;
+    width: 350px;
+    background: var(--calc-bg);
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    transition: 0.3s;
 }
 
 #display {
@@ -31,7 +68,33 @@ body {
     border-radius: 10px;
     background: #333;
     color: white;
+    margin-bottom: 10px;
+}
+
+.history-container {
     margin-bottom: 15px;
+}
+
+#toggleHistory {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #6c6cff;
+    color: white;
+}
+
+.history {
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    height: 120px;
+    overflow-y: auto;
+    border-radius: 10px;
+    display: none;         /* 🔥 Hides history initially */
+    transition: 0.3s ease;
 }
 
 .buttons {
@@ -41,39 +104,37 @@ body {
 }
 
 .btn {
-    padding: 20px;
+    padding: 18px;
     font-size: 1.2rem;
     border: none;
-    background: #444;
-    color: white;
+    background: var(--btn-bg);
+    color: var(--btn-text);
     border-radius: 12px;
     cursor: pointer;
     transition: 0.2s;
 }
 
 .btn:hover {
-    background: #555;
+    transform: scale(1.05);
 }
 
 .operator {
-    background: #ff9500;
-}
-
-.operator:hover {
-    background: #e68500;
+    background: var(--operator-bg);
+    color: #fff;
 }
 
 .equal {
-    background: #36c41c;
-    grid-row: span 2;
-    height: 100%;
-}
-
-.equal:hover {
-    background: #2ea417;
+    background: var(--equal-bg);
+    color: #fff;
+    grid-column: span 3;
 }
 
 .zero {
     grid-column: span 2;
+}
+
+.special {
+    background: #6c6cff;
+    color: white;
 }
 

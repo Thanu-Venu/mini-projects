@@ -1,40 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Intermediate Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <div class="theme-toggle">
+        <button id="toggleTheme">🌙</button>
+    </div>
+
     <div class="calculator">
+
         <input type="text" id="display" disabled>
+
+        <div class="history-container">
+            <button id="toggleHistory">📜 History</button>
+
+            <div class="history" id="historyBox">
+                <ul id="historyList"></ul>
+            </div>
+        </div>
+
         <div class="buttons">
-            <button class="btn" onclick="clearAll()">AC</button>
-            <button class="btn" onclick="clearOne()">C</button>
+
+            <button class="btn func" onclick="clearAll()">AC</button>
+            <button class="btn func" onclick="clearOne()">C</button>
+            <button class="btn operator" onclick="appendValue('%')">%</button>
             <button class="btn operator" onclick="appendValue('/')">÷</button>
-            <button class="btn operator" onclick="appendValue('*')">×</button>
 
             <button class="btn" onclick="appendValue('7')">7</button>
             <button class="btn" onclick="appendValue('8')">8</button>
             <button class="btn" onclick="appendValue('9')">9</button>
-            <button class="btn operator" onclick="appendValue('-')">−</button>
+            <button class="btn operator" onclick="appendValue('*')">×</button>
 
             <button class="btn" onclick="appendValue('4')">4</button>
             <button class="btn" onclick="appendValue('5')">5</button>
             <button class="btn" onclick="appendValue('6')">6</button>
-            <button class="btn operator" onclick="appendValue('+')">+</button>
+            <button class="btn operator" onclick="appendValue('-')">−</button>
 
             <button class="btn" onclick="appendValue('1')">1</button>
             <button class="btn" onclick="appendValue('2')">2</button>
             <button class="btn" onclick="appendValue('3')">3</button>
-            <button class="btn equal" onclick="calculate()">=</button>
+            <button class="btn operator" onclick="appendValue('+')">+</button>
 
             <button class="btn zero" onclick="appendValue('0')">0</button>
             <button class="btn" onclick="appendValue('.')">.</button>
+
+            <button class="btn special" onclick="square()">x²</button>
+            <button class="btn special" onclick="squareRoot()">√</button>
+
+            <button class="btn equal" onclick="calculate()">=</button>
+
         </div>
     </div>
+
     <script src="script.js"></script>
-    
 </body>
+
 </html>
