@@ -5,57 +5,57 @@ A simple and interactive Tip Calculator that helps users quickly calculate the t
 🌟 Features
 ✅ Basic Features
 
-Enter bill amount
+-Enter bill amount
 
-Choose tip percentage (5%, 10%, 15%, 20%, custom)
+-Choose tip percentage (5%, 10%, 15%, 20%, custom)
 
-Enter number of people
+-Enter number of people
 
-Auto-calculate:
+-Auto-calculate:
 
-Tip amount per person
+-Tip amount per person
 
-Total amount per person
+-Total amount per person
 
-Reset button to clear all fields
+-Reset button to clear all fields
 
 🔥 Advanced Features (Optional Upgrades)
 
-You can include these to make the project more impressive:
+-You can include these to make the project more impressive:
 
 🎨 UI Enhancements
 
-Dark / Light mode toggle
+-Dark / Light mode toggle
 
-Animated input focus
+-Animated input focus
 
-Smooth CSS transitions
+-Smooth CSS transitions
 
-Neumorphism or glassmorphism style
+-Neumorphism or glassmorphism style
 
-Error message for invalid inputs
+-Error message for invalid inputs
 
 ⚙️ Functional Features
 
-Custom tip slider
+-Custom tip slider
 
-Real-time calculation (no button needed)
+-Real-time calculation (no button needed)
 
-Split bill among people
+-Split bill among people
 
-Include tax percentage before tip
+-Include tax percentage before tip
 
-Round-up option (round total to nearest whole number)
+-Round-up option (round total to nearest whole number)
 
-Save last calculation using LocalStorage
+-Save last calculation using LocalStorage
 
 📱 Responsive Design
 
-Fully responsive for mobile and tablet
+-Fully responsive for mobile and tablet
 
-Buttons adapt to screen width
+-Buttons adapt to screen width
 
-Input fields resize smoothly
+-Input fields resize smoothly
 
 📂 Project Structure
 tip-calculator/
@@ -65,40 +65,47 @@ tip-calculator/
 
 🚀 How to Use
 
-Open the app in your browser.
+1.Open the app in your browser.
 
-Enter the bill amount.
+2.Enter the bill amount.
 
-Select a tip percentage, or enter a custom tip.
+3.Select a tip percentage, or enter a custom tip.
 
-Enter the number of people sharing the bill.
+4.Enter the number of people sharing the bill.
 
-Get instant results for:
+5.Get instant results for:
 
-Tip per person
+-Tip per person
 
-Total per person
+-Total per person
 
-Press Reset to start again.
+6.Press Reset to start again.
 
 🎯 Skills Gained
 
-DOM manipulation
+-DOM manipulation
 
-Event handling
+-Event handling
 
-Input validation
+-Input validation
 
-CSS layout & styling
+-CSS layout & styling
 
-Real-time UI logic
+-Real-time UI logic
 
-Working with numbers and formatting
+-Working with numbers and formatting
 
 📝 Future Improvements
 
-Currency selection (USD, LKR, INR, etc.)
+-Currency selection (USD, LKR, INR, etc.)
 
-Voice input (optional fun feature)
+-Voice input (optional fun feature)
 
-Full accessibility (ARIA labels, keyboard navigation)
+-Full accessibility (ARIA labels, keyboard navigation)
+
+Screenshots
+<img width="1912" height="1036" alt="image" src="https://github.com/user-attachments/assets/9b3f83ad-2d4b-4585-ae6a-621de2e5b70c" />
+<img width="1918" height="1026" alt="image" src="https://github.com/user-attachments/assets/1d97cab3-5d0a-4ecd-a096-e9f6eaa25cea" />
+<img width="1918" height="970" alt="image" src="https://github.com/user-attachments/assets/0ca699d6-e9fe-465d-9f2c-1e2efad0c8c1" />
+
+
