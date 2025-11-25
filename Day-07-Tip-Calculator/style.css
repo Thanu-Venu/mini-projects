@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 350px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00b894;
+}
+
+.tip-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.tip-btn {
+    flex: 1;
+    padding: 10px;
+    background: #00b894;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tip-btn:hover {
+    background: #019875;
+}
+
+#customTip {
+    flex: 1;
+}
+
+.result-box {
+    display: flex;
+    justify-content: space-between;
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.result-box div {
+    text-align: center;
+}
+
+.result-box p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2d3436;
+}
+
+.reset {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background: #d63031;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.reset:hover {
+    background: #b72728;
+}
+
+.tip-btn.active {
+    background: #0984e3 !important;
+    color: white;
+}
