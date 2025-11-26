@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background: #f2f2f2;
+    background: #f0f2f5;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -14,84 +14,126 @@ body {
 
 .container {
     width: 100%;
-    max-width: 600px;
+    max-width: 750px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 25px;
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    color: #2d3436;
+    font-size: 32px;
 }
 
 .note-input {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
+    gap: 12px;
+    margin-bottom: 25px;
 }
 
 input,
 textarea {
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 8px;
+    padding: 12px;
+    border-radius: 10px;
     border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4b7bec;
+    box-shadow: 0 0 10px rgba(75, 123, 236, 0.2);
 }
 
 button {
     padding: 12px;
+    border: none;
+    border-radius: 10px;
     background: #4b7bec;
     color: white;
-    border: none;
-    border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
 button:hover {
     background: #3867d6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .notes-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 15px;
+    margin-bottom: 25px;
 }
 
 .note {
-    background: white;
+    background: #ffffff;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 12px;
     border-left: 6px solid #4b7bec;
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.note:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.note img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 8px;
 }
 
 .note .note-title {
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #2d3436;
 }
 
-.note .card-actions {
+.note .note-text {
+    font-size: 15px;
+    color: #636e72;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.note small {
+    color: #b2bec3;
+}
+
+.card-actions {
     display: flex;
     justify-content: flex-end;
-    gap: 5px;
+    gap: 8px;
+    margin-top: 5px;
 }
 
+.edit-btn,
 .delete-btn,
-.edit-btn {
-    padding: 5px 10px;
+.pin-btn {
+    padding: 6px 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 12px;
-}
-
-.delete-btn {
-    background: #ff4d4d;
-    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
 .edit-btn {
@@ -99,7 +141,30 @@ button:hover {
     color: white;
 }
 
-h2{
-    text-align: center;
-    margin: 10px;
+.edit-btn:hover {
+    background: #e67e22;
+}
+
+.delete-btn {
+    background: #ff4d4d;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #e84118;
+}
+
+.pin-btn {
+    background: #00b894;
+    color: white;
+}
+
+.pin-btn:hover {
+    background: #009977;
+}
+
+#exportBtn,
+#importBtn {
+    width: 49%;
+    margin-top: 10px;
 }
