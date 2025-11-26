@@ -101,3 +101,8 @@ File exporting
 Drag-and-drop API
 
 Firebase integration
+
+Screenshots
+<img width="1918" height="1031" alt="image" src="https://github.com/user-attachments/assets/c45380a3-9ab3-4c81-b643-387df11fc8d3" />
+<img width="1918" height="1018" alt="image" src="https://github.com/user-attachments/assets/d815b10a-6e5b-4d03-8fa4-6d8b739135b8" />
+
