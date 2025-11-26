@@ -83,7 +83,7 @@
 | 5 | Color Picker / Background Changer | ✅ Completed |
 | 6 | Simple Calculator | ✅ Completed |
 | 7 | Tip Calculator | ✅ Completed |
-| 8 | Notes Taking App | ☐ Not Completed |
+| 8 | Notes Taking App | ✅ Completed |
 | 9 | Password Strength Checker | ☐ Not Completed |
 | 10 | Image Slider / Carousel | ☐ Not Completed |
 | 11 | Animated Tabs | ☐ Not Completed |
