@@ -59,3 +59,8 @@ Letters (A–Z, a–z)
 Optional pattern checks (uppercase, lowercase, symbols)
 
 Depending on the rules matched, it displays a suitable strength message.
+
+Screenshots
+<img width="1918" height="970" alt="image" src="https://github.com/user-attachments/assets/ee9f3994-5617-4f60-b823-11fad7cd8a3e" />
+<img width="1918" height="1032" alt="image" src="https://github.com/user-attachments/assets/7c113577-4061-424f-ad7d-48b24e51679f" />
+
