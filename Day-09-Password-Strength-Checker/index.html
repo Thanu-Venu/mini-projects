@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Strength Checker</title>
+    <title>Password Checker - Intermediate</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
+
         <h2>Password Strength Checker</h2>
 
         <div class="input-box">
@@ -16,11 +17,26 @@
             <span id="toggleEye">👁️</span>
         </div>
 
+        <button id="copyBtn">📋 Copy</button>
+
         <div class="strength-bar">
             <div id="bar"></div>
         </div>
 
         <p id="strength"></p>
+
+        <h3>Password Rules</h3>
+        <ul class="rules">
+            <li id="r1">❌ At least 8 characters</li>
+            <li id="r2">❌ Lowercase letter</li>
+            <li id="r3">❌ Uppercase letter</li>
+            <li id="r4">❌ Number</li>
+            <li id="r5">❌ Symbol (!@#$%^&*)</li>
+        </ul>
+
+        <h3>History (Last 5)</h3>
+        <ul id="historyList"></ul>
+
     </div>
 
     <script src="script.js"></script>
