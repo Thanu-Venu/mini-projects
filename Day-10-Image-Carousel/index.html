@@ -3,46 +3,51 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image Carousel - Beginner</title>
+    <title>Image Carousel - Intermediate</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <div class="carousel-container">
+    <div class="carousel-container" id="carousel">
+
         <div class="carousel-slide">
-        <div class="slide active">
-        <img src="images/img1.jpg">
-        <p class="caption">Ella Nine Arch Bridge</p>
-    </div>
 
-    <div class="slide">
-        <img src="images/img3.jpg">
-        <p class="caption">Sigiriya Rock Fortress</p>
-    </div>
+            <div class="slide active">
+                <img src="images/img1.jpg">
+                <p class="caption">Ella Nine Arch Bridge</p>
+            </div>
 
-    <div class="slide">
-        <img src="images/img2.jpg">
-        <p class="caption">Yala Elephant Park</p>
-    </div>
+            <div class="slide">
+                <img src="images/img2.jpg">
+                <p class="caption">Yala Elephant Park</p>
+            </div>
 
-    <div class="slide">
-        <img src="images/img4.jpg">
-        <p class="caption">Colombo City</p>
-    </div>
-</div>
+            <div class="slide">
+                <img src="images/img3.jpg">
+                <p class="caption">Sigiriya Rock Fortress</p>
+            </div>
 
+            <div class="slide">
+                <img src="images/img4.jpg">
+                <p class="caption">Colombo City</p>
+            </div>
 
-        <!-- Navigation -->
+        </div>
+
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
 
-        <!-- Dots -->
         <div class="dots">
             <span class="dot active-dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
         </div>
+
+        <div class="counter">1 / 4</div>
+
+        <button id="toggleAuto" class="play-btn">⏸ Pause</button>
+
     </div>
 
     <script src="script.js"></script>
