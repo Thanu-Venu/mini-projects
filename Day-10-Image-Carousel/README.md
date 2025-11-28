@@ -72,7 +72,8 @@ This project focuses on animations, DOM manipulation, and user interactivity.
 ---
 
 ## 📸 Screenshots  
-(Add after completing your project)
+<img width="1918" height="1037" alt="image" src="https://github.com/user-attachments/assets/b5b35685-2ee1-424d-8c76-da9fca74aec0" />
+<img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/22365a7b-21c6-44bd-b694-31da3d2d0b3a" />
 
 ---
 
