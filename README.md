@@ -63,18 +63,18 @@ By the end of 30 days, I will have a solid portfolio and stronger coding consist
 
 ## 📁 Repository Structure
 
-30-Days-Web-Challenge/
-├── Day-01-Random-Background
-├── Day-02-Countdown-Timer
-├── Day-03-Stopwatch
-├── Day-04-Random-Quote
-├── Day-05-Color-Picker
-├── Day-06-Calculator
-├── Day-07-Tip-Calculator
-├── Day-08-Notes-App
-├── ...
-├── Day-30-Portfolio
-└── README.md
+- 30-Days-Web-Challenge/
+- ├── Day-01-Random-Background
+- ├── Day-02-Countdown-Timer
+- ├── Day-03-Stopwatch
+- ├── Day-04-Random-Quote
+- ├── Day-05-Color-Picker
+- ├── Day-06-Calculator
+- ├── Day-07-Tip-Calculator
+- ├── Day-08-Notes-App
+- ├── ...
+- ├── Day-30-Portfolio
+- └── README.md
 
 
 ---
