@@ -74,9 +74,9 @@ Tabs allow users to navigate between different content sections without reloadin
 
 ---
 
-# 📸 Preview (Concept)
-
-
+# 📸 Preview 
+<img width="1917" height="976" alt="image" src="https://github.com/user-attachments/assets/8ea674c5-1da9-44df-b75d-e7077ce30db4" />
+<img width="1918" height="1022" alt="image" src="https://github.com/user-attachments/assets/43fd87c7-6124-4e5b-99bb-27c7a41b1dec" />
 
 ---
 
