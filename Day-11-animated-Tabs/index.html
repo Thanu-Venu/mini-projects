@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <h2 class="logo">MyAgency</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#tabs-section">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Creative Digital Agency</h1>
+        <p>We build beautiful, responsive, and high-performing digital experiences.</p>
+        <a href="#tabs-section" class="btn">View Services</a>
+    </section>
+
+    <!-- SERVICES TABS SECTION -->
+    <section id="tabs-section" class="tabs-wrapper">
+        <h2 class="section-title">Our Services</h2>
+
+        <div class="tabs-container">
+            <div class="tabs">
+                <button class="tab active" data-tab="webdesign">Web Design</button>
+                <button class="tab" data-tab="appdev">App Development</button>
+                <button class="tab" data-tab="branding">Branding</button>
+                <button class="tab" data-tab="marketing">Marketing</button>
+            </div>
+
+            <div class="tab-content active" id="webdesign">
+                <h3>Web Design</h3>
+                <p>We create stunning, responsive websites with modern UI/UX design principles.</p>
+                <ul>
+                    <li>Custom website design</li>
+                    <li>Landing pages</li>
+                    <li>Portfolio sites</li>
+                    <li>Figma to HTML/CSS</li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="appdev">
+                <h3>App Development</h3>
+                <p>We build fast and secure web, Android, and iOS applications tailored for your business.</p>
+                <ul>
+                    <li>Android & iOS apps</li>
+                    <li>Full-stack web apps</li>
+                    <li>API development</li>
+                    <li>Real-time & cloud apps</li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="branding">
+                <h3>Branding</h3>
+                <p>We help brands create strong identities through visuals and messaging.</p>
+                <ul>
+                    <li>Logo design</li>
+                    <li>Brand identity kits</li>
+                    <li>Social media branding</li>
+                    <li>Business cards & templates</li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="marketing">
+                <h3>Marketing</h3>
+                <p>Grow your business with our digital marketing strategies and campaigns.</p>
+                <ul>
+                    <li>SEO optimization</li>
+                    <li>Social media ads</li>
+                    <li>Email campaigns</li>
+                    <li>Content marketing</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 MyAgency — All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
