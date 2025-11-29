@@ -86,7 +86,7 @@
 | 8 | Notes Taking App | ✅ Completed |
 | 9 | Password Strength Checker | ✅ Completed |
 | 10 | Image Slider / Carousel | ✅ Completed |
-| 11 | Animated Tabs | ☐ Not Completed |
+| 11 | Animated Tabs | ✅ Completed |
 | 12 | Modal Popup | ☐ Not Completed |
 | 13 | Tooltip Hover Effects | ☐ Not Completed |
 | 14 | Accordion Menu | ☐ Not Completed |
