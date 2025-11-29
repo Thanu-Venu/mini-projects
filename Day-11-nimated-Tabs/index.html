@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Tabs - Intermediate</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+
+    <!-- MAIN CONTAINER -->
+    <section class="container">
+
+        <h1 class="title">Our Services</h1>
+        <p class="subtitle">Click a service to explore what we offer</p>
+
+        <!-- TABS -->
+        <div class="tabs">
+            <button class="tab active" data-tab="web">
+                <i data-feather="monitor"></i>
+                Web Design
+            </button>
+
+            <button class="tab" data-tab="app">
+                <i data-feather="smartphone"></i>
+                App Development
+            </button>
+
+            <button class="tab" data-tab="brand">
+                <i data-feather="pen-tool"></i>
+                Branding
+            </button>
+
+            <button class="tab" data-tab="marketing">
+                <i data-feather="trending-up"></i>
+                Marketing
+            </button>
+        </div>
+
+        <!-- TAB CONTENT -->
+        <div class="content-box">
+
+            <div class="content active" id="web">
+                <h2>Modern Web Design</h2>
+                <p>
+                    We create visually stunning, responsive and user-centered websites that bring your ideas to life.
+                </p>
+            </div>
+
+            <div class="content" id="app">
+                <h2>App Development</h2>
+                <p>
+                    From concept to launch, we build fast, secure and scalable mobile applications.
+                </p>
+            </div>
+
+            <div class="content" id="brand">
+                <h2>Creative Branding</h2>
+                <p>
+                    We craft unique brand identities that make your business stand out in any industry.
+                </p>
+            </div>
+
+            <div class="content" id="marketing">
+                <h2>Digital Marketing</h2>
+                <p>
+                    We help you grow with strategic marketing, SEO optimization and audience targeting.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+<script src="script.js"></script>
+<script>
+    feather.replace();
+</script>
+
+</body>
+</html>
