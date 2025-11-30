@@ -65,8 +65,9 @@ A clean, smooth, and fully interactive **Modal Popup Component** built using **H
 
 ---
 
-## 📸 Preview (Add after project completion)  
-
+## 📸 Preview  
+<img width="1911" height="1038" alt="image" src="https://github.com/user-attachments/assets/181d60e1-af09-4fb2-9b86-d55a570de0a3" />
+<img width="1918" height="980" alt="image" src="https://github.com/user-attachments/assets/a3df593c-04cf-4c38-8e15-1a9d8708df56" />
 
 ---
 
