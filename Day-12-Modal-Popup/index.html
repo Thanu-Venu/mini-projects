@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Features Modal Popup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>✨ Modal Popup Project – All Features Demo</h1>
+
+  <button class="btn" data-open="modal-1">Open Basic Modal</button>
+  <button class="btn" data-open="modal-2">Open Image Modal</button>
+  <button class="btn" data-open="modal-form">Open Form Modal</button>
+
+  <!-- BASIC MODAL -->
+  <div class="modal" id="modal-1" role="dialog" aria-modal="true" aria-labelledby="modal1-title" data-animation="scale">
+    <div class="modal__overlay" data-close></div>
+
+    <div class="modal__dialog">
+      <button class="modal__close" data-close>&times;</button>
+      <h2 id="modal1-title">Welcome to the Basic Modal 🎉</h2>
+      <p>This modal supports closing with ESC, clicking outside, and focus trapping.</p>
+      <button class="btn small" data-close>Close</button>
+    </div>
+  </div>
+
+  <!-- IMAGE MODAL -->
+  <div class="modal" id="modal-2" role="dialog" aria-modal="true" aria-labelledby="img-title" data-animation="slide">
+    <div class="modal__overlay" data-close></div>
+
+    <div class="modal__dialog">
+      <button class="modal__close" data-close>&times;</button>
+      <h2 id="img-title">Beautiful Location 🌄</h2>
+      <img src="https://picsum.photos/500/300" alt="Random" class="modal-img" />
+      <button class="btn small" data-close>Close</button>
+    </div>
+  </div>
+
+  <!-- FORM MODAL -->
+  <div class="modal" id="modal-form" role="dialog" aria-modal="true" aria-labelledby="form-title" data-animation="scale">
+    <div class="modal__overlay" data-close></div>
+
+    <div class="modal__dialog">
+      <button class="modal__close" data-close>&times;</button>
+      <h2 id="form-title">Contact Us 📝</h2>
+
+      <form id="contactForm">
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" required></textarea>
+        </label>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+
+      <p id="form-status"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
