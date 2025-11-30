@@ -1,4 +1,4 @@
-# 🖼️ Image Carousel | Day X of 30-Day Web Dev Challenge
+# 🖼️ Image Carousel | Day 10 of 30-Day Web Dev Challenge
 
 A modern, responsive, and smooth image carousel built using **HTML, CSS, and JavaScript**.  
 This project focuses on animations, DOM manipulation, and user interactivity.
