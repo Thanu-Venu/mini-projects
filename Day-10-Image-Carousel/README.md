@@ -83,3 +83,7 @@ This project focuses on animations, DOM manipulation, and user interactivity.
 - Add zoom mode  
 
 ---
+
+⭐ Made with ❤️ as part of my 30 Days Mini Web Project Challenge
+
+---
