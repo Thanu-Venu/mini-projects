@@ -63,3 +63,7 @@ The checker evaluates the entered password based on:
 After evaluation, it displays a **Weak**, **Medium**, or **Strong** strength message, with optional animations or UI highlights.
 
 ---
+
+⭐ Made with ❤️ as part of my 30 Days Mini Web Project Challenge
+
+---
