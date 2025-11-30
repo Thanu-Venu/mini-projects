@@ -91,3 +91,9 @@ Tabs allow users to navigate between different content sections without reloadin
 
 # 📜 License
 This project is free to use, modify, and contribute.
+
+---
+
+⭐ Made with ❤️ as part of my 30 Days Mini Web Project Challenge
+
+---
