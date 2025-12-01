@@ -47,8 +47,10 @@ Today’s mini-project focuses on building **smooth, modern, and interactive Too
 
 ---
 
-## 📸 Demo Example  
+## 📸 ScreenShots
 
+<img width="1918" height="1032" alt="image" src="https://github.com/user-attachments/assets/b26b254e-1b94-4a15-9692-c9f2e2d32b9f" />
+<img width="1913" height="1026" alt="image" src="https://github.com/user-attachments/assets/44241d4c-ea88-46f3-ba98-0eae9aaa0d69" />
 
 ---
 
