@@ -95,7 +95,7 @@ By the end of 30 days, I will have a solid portfolio and stronger coding consist
 | 10 | Image Slider / Carousel | ✅ Completed |
 | 11 | Animated Tabs | ✅ Completed |
 | 12 | Modal Popup | ✅ Completed |
-| 13 | Tooltip Hover Effects | ☐ Not Completed |
+| 13 | Tooltip Hover Effects | ✅ Completed |
 | 14 | Accordion Menu | ☐ Not Completed |
 | 15 | Rock Paper Scissors | ☐ Not Completed |
 | 16 | Dice Roller | ☐ Not Completed |
