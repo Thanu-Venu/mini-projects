@@ -1,0 +1,81 @@
+body {
+  font-family: Poppins, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  background: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tooltip {
+  position: relative;
+  background: #111;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
+  user-select: none;
+}
+
+/* Tooltip text bubble */
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  background: #222;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  pointer-events: none;
+  transform: translateY(5px);
+}
+
+/* Show tooltip */
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Positions */
+.tooltip-top::after {
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+}
+
+.tooltip-right::after {
+  top: 50%;
+  left: 120%;
+  transform: translateY(-50%) translateX(5px);
+}
+
+.tooltip-bottom::after {
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+.tooltip-left::after {
+  top: 50%;
+  right: 120%;
+  transform: translateY(-50%) translateX(-5px);
+}
+
+/* Hover styling (optional) */
+.tooltip:hover {
+  background: #222;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
