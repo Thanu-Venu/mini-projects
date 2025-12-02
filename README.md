@@ -96,7 +96,7 @@ By the end of 30 days, I will have a solid portfolio and stronger coding consist
 | 11 | Animated Tabs | ✅ Completed |
 | 12 | Modal Popup | ✅ Completed |
 | 13 | Tooltip Hover Effects | ✅ Completed |
-| 14 | Accordion Menu | ☐ Not Completed |
+| 14 | Accordion Menu | ✅ Completed |
 | 15 | Rock Paper Scissors | ☐ Not Completed |
 | 16 | Dice Roller | ☐ Not Completed |
 | 17 | Memory Card Game | ☐ Not Completed |
