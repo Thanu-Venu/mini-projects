@@ -1,15 +1,19 @@
-// Select all accordion headers
-const headers = document.querySelectorAll(".accordion-header");
+const items = document.querySelectorAll(".accordion-item");
 
-headers.forEach(header => {
+items.forEach(item => {
+  const header = item.querySelector(".accordion-header");
+  const content = item.querySelector(".accordion-content");
+
   header.addEventListener("click", () => {
-    const content = header.nextElementSibling;
+    const isOpen = header.classList.contains("active");
 
-    // Toggle display
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
+    // Close all sections (single-open mode)
+    document.querySelectorAll(".accordion-header").forEach(h => h.classList.remove("active"));
+    document.querySelectorAll(".accordion-content").forEach(c => c.style.maxHeight = null);
+
+    if (!isOpen) {
+      header.classList.add("active");
+      content.style.maxHeight = content.scrollHeight + "px";
     }
   });
 });
