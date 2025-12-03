@@ -40,7 +40,6 @@
 
 ## 📁 Project Structure (suggested)
 
-```
 rps-day15/
 ├─ index.html
 ├─ README.md
@@ -107,7 +106,9 @@ rps-day15/
 
 ## 📸 Screenshots
 
-*Optional — place preview screenshots into `screenshots/preview.png` and reference them in the README.*
+<img width="1918" height="982" alt="image" src="https://github.com/user-attachments/assets/e70a24e2-6ecb-4145-b001-1b622ec3fa2a" />
+<img width="1905" height="971" alt="image" src="https://github.com/user-attachments/assets/9609f980-43a5-4695-82ef-4c03428dde66" />
+
 
 ---
 
