@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors - Day 15</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Rock Paper Scissors</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>🪨 Rock • 📄 Paper • ✂️ Scissors</h1>
+<div class="game-chat-container">
 
-    <div class="scoreboard">
-        <p>Player: <span id="player-score">0</span></p>
-        <p>Computer: <span id="computer-score">0</span></p>
-    </div>
+    <!-- Game Section -->
+    <div class="game-container">
+        <h1>🪨 Rock • 📄 Paper • ✂️ Scissors</h1>
 
-    <div class="buttons">
-        <button class="choice" data-choice="rock">🪨 Rock</button>
-        <button class="choice" data-choice="paper">📄 Paper</button>
-        <button class="choice" data-choice="scissors">✂️ Scissors</button>
-    </div>
-
-    <div id="result-box">
-        <p id="result-message">Make your move!</p>
-    </div>
-
-    <button id="reset-btn">Reset Game</button>
-
-    <!-- 🗨 Chatbot Section -->
-    <div class="chat-container">
-        <h2>💬 Chat with Computer</h2>
-
-        <div id="chat-box" class="chat-box">
-            <!-- Chat messages will appear here -->
+        <div class="scoreboard">
+            <p>Player: <span id="player-score">0</span></p>
+            <p>Computer: <span id="computer-score">0</span></p>
         </div>
 
+        <div class="buttons">
+            <button class="choice" data-choice="rock">🪨 Rock</button>
+            <button class="choice" data-choice="paper">📄 Paper</button>
+            <button class="choice" data-choice="scissors">✂️ Scissors</button>
+        </div>
+
+        <div id="result-box">
+            <p id="result-message">Make your move!</p>
+        </div>
+
+        <div class="best-of-container">
+            <label for="best-of">Best of: </label>
+            <select id="best-of">
+                <option value="3">3</option>
+                <option value="5" selected>5</option>
+            </select>
+        </div>
+
+        <div class="history-box">
+            <h3>Last 5 Rounds</h3>
+            <ul id="history-list"></ul>
+        </div>
+
+        <button id="reset-btn">Reset Game</button>
+    </div>
+
+    <!-- Chat Section -->
+    <div class="chat-container">
+        <h2>💬 Chat with Computer</h2>
+        <div id="chat-box" class="chat-box"></div>
         <div class="chat-input-area">
             <input type="text" id="chat-input" placeholder="Say something..." autocomplete="off">
             <button id="send-btn">Send</button>
         </div>
     </div>
 
-    <script src="script.js"></script>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
