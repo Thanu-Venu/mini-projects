@@ -90,6 +90,8 @@ project-folder/
 
 ---
 ## 📸 Screenshots
+<img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/c0a5652a-d428-4ce4-869b-384e41ca13d2" />
+<img width="1918" height="967" alt="image" src="https://github.com/user-attachments/assets/e7fdd7c5-8ac5-4cff-8495-ac8c945000eb" />
 
 ---
 
