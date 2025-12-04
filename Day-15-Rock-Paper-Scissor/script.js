@@ -17,6 +17,11 @@ let roundsPlayed = 0;
 let bestOf = parseInt(bestOfSelect.value);
 let history = [];
 
+const sounds = {
+    win: new Audio("https://freesound.org/data/previews/320/320181_5260878-lq.mp3"),
+    lose: new Audio("https://freesound.org/data/previews/320/320184_5260878-lq.mp3"),
+    tie: new Audio("https://freesound.org/data/previews/320/320182_5260878-lq.mp3")
+};
 
 // Get Computer Choice
 function getComputerChoice() {
