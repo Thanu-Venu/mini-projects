@@ -11,51 +11,80 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  transition: 0.3s;
+}
+
+body.dark {
+  background: #1b1b1b;
+  color: white;
 }
 
 .container {
   background: white;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  width: 350px;
-  text-align: center;
+  width: 380px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+body.dark .container {
+  background: #2a2a2a;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+#themeToggle {
+  background: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
 }
 
 .controls {
-  margin: 20px 0;
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-input {
-  width: 60px;
-  padding: 5px;
-  margin-left: 5px;
-  border-radius: 5px;
+input, select {
+  padding: 6px;
+  border-radius: 6px;
   border: 1px solid #aaa;
 }
 
 button {
-  margin-top: 15px;
-  width: 100%;
-  padding: 12px;
-  background: #3a86ff;
-  border: none;
-  color: white;
+  padding: 10px;
   font-size: 16px;
   border-radius: 10px;
+  border: none;
   cursor: pointer;
-  transition: 0.2s ease;
+  background: #3a86ff;
+  color: white;
 }
 
 button:hover {
   background: #2667d1;
 }
 
+.clear-btn {
+  background: #dc3545;
+  margin: 20px;
+  
+}
+.clear-btn:hover {
+  background: #b02a37;
+}
+
 .dice-box {
-  margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 15px;
 }
 
 .dice {
@@ -64,12 +93,18 @@ button:hover {
   background: white;
   border: 3px solid #333;
   border-radius: 10px;
-  font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 22px;
   font-weight: 700;
   animation-duration: 0.4s;
+}
+
+body.dark .dice {
+  background: #444;
+  border-color: #eee;
+  color: white;
 }
 
 @keyframes roll {
@@ -81,10 +116,20 @@ button:hover {
 }
 
 .result-box {
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: 600;
   background: #e8f0fe;
-  padding: 15px;
+  padding: 12px;
   border-radius: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+body.dark .result-box {
+  background: #333;
+  color: #fff;
+}
+
+.history {
+  max-height: 120px;
+  overflow-y: auto;
+  padding-left: 15px;
 }

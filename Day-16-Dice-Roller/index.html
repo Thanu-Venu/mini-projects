@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dice Roller</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Roller — Intermediate</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="container">
-    <h1>🎲 Dice Roller</h1>
+    <div class="top">
+      <h1>🎲 Dice Roller</h1>
+      <button id="themeToggle">🌙</button>
+    </div>
 
     <div class="controls">
       <label>
-        Number of Dice:
+        Dice Count:
         <input id="diceCount" type="number" min="1" value="1">
+      </label>
+
+      <label>
+        Dice Type:
+        <select id="diceType">
+          <option value="4">d4</option>
+          <option value="6" selected>d6</option>
+          <option value="8">d8</option>
+          <option value="10">d10</option>
+          <option value="12">d12</option>
+          <option value="20">d20</option>
+        </select>
       </label>
 
       <button id="rollBtn">Roll</button>
@@ -23,6 +38,11 @@
     <div id="diceDisplay" class="dice-box"></div>
 
     <div id="result" class="result-box">Click Roll to start 🎲</div>
+
+    <h3>📜 Roll History</h3>
+    <ul id="historyList" class="history"></ul>
+
+    <button id="clearHistory" class="clear-btn">Clear History</button>
   </div>
 
   <script src="script.js"></script>
