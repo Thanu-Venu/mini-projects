@@ -6,13 +6,15 @@
 }
 
 body {
-    background: #f0f0f0;
-    text-align: center;
+    background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
     padding: 20px;
 }
 
 h1 {
     margin-bottom: 20px;
+    color: white;
+    justify-content: center;
+    text-align: center;
 }
 
 .game-container {
@@ -62,16 +64,34 @@ h1 {
 }
 
 #restartBtn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
+    position: absolute;       /* Absolute positioning */
+    top: 20px;                /* Distance from top */
+    right: 20px;              /* Distance from right */
+    padding: 12px 26px;
+    font-size: 17px;
+    font-weight: 500;
     border: none;
-    background: #3867d6;
-    color: white;
-    border-radius: 8px;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #ffffff;
+    border-radius: 10px;
     cursor: pointer;
+    box-shadow: 0 0 10px #1d4ed8;
+    transition: 0.3s;
+    z-index: 100;             /* Make sure it's on top of other elements */
 }
 
 #restartBtn:hover {
-    background: #2d60c1;
+    background: linear-gradient(135deg, #1e3a8a, #1e40af);
+    box-shadow: 0 0 14px #3b82f6;
+}
+
+
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: white;
 }
