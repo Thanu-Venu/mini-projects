@@ -82,3 +82,16 @@ Perfect for JavaScript beginners to practice DOM manipulation, event listeners, 
 - Progress bar
 - Saved game sessions
 
+---
+
+## 📸 ScreenShots
+<img width="1912" height="1032" alt="image" src="https://github.com/user-attachments/assets/86016deb-cae4-404f-bb8b-4d1f971921c0" />
+<img width="1918" height="972" alt="image" src="https://github.com/user-attachments/assets/accb2882-f937-4b60-b4c6-18df04061fa7" />
+<img width="1913" height="968" alt="image" src="https://github.com/user-attachments/assets/4deb14e9-5829-4458-aae9-ff3e363a9371" />
+
+---
+
+⭐ Made with ❤️ as part of my 30 Days Mini Web Project Challenge
+
+---
+
