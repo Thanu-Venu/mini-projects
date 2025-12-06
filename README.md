@@ -100,7 +100,7 @@ By the end of 30 days, I will have a solid portfolio and stronger coding consist
 | 15 | Rock Paper Scissors | ✅ Completed |
 | 16 | Dice Roller | ✅ Completed |
 | 17 | Memory Card Game | ✅ Completed |
-| 18 | Tic Tac Toe | ☐ Not Completed |
+| 18 | Tic Tac Toe | ✅ Completed |
 | 19 | Coin Flip Simulator | ☐ Not Completed |
 | 20 | Color Guessing Game | ☐ Not Completed |
 | 21 | BMI Calculator | ☐ Not Completed |
