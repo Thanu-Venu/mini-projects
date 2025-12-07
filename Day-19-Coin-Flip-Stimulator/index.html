@@ -9,18 +9,26 @@
 <body>
     <div class="container">
         <h1>🪙 Coin Flip Simulator</h1>
+
         <div class="coin-container">
             <img id="coin" src="assets/coin-head.png" alt="Coin">
         </div>
+
         <button id="flip-btn">Flip Coin</button>
+        <button id="reset-btn">Reset</button>
+
         <div class="result" id="result"></div>
-        <div class="counter">
+
+        <div class="stats">
             <p>Total Flips: <span id="total">0</span></p>
             <p>Heads: <span id="heads">0</span></p>
             <p>Tails: <span id="tails">0</span></p>
+            <p id="probability">Heads: 0% | Tails: 0%</p>
+            <p id="streak">Current Streak: 0</p>
+            <p>History: <span id="history"></span></p>
         </div>
-        <button id="reset-btn">Reset</button>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
