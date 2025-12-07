@@ -62,6 +62,13 @@ To practice:
 
 ---
 
+## 📸 ScreenShots
+
+<img width="1918" height="1022" alt="image" src="https://github.com/user-attachments/assets/a327ed95-a78c-437f-b5cf-349017c5a56e" />
+<img width="1918" height="1023" alt="image" src="https://github.com/user-attachments/assets/eba2372a-f277-4f15-ba9f-7f754cbcbfdd" />
+
+---
+
 ⭐ Made with ❤️ as part of my 30 Days Mini Web Project Challenge
 
 ---
