@@ -101,7 +101,7 @@ By the end of 30 days, I will have a solid portfolio and stronger coding consist
 | 16 | Dice Roller | ✅ Completed |
 | 17 | Memory Card Game | ✅ Completed |
 | 18 | Tic Tac Toe | ✅ Completed |
-| 19 | Coin Flip Simulator | ☐ Not Completed |
+| 19 | Coin Flip Simulator | ✅ Completed |
 | 20 | Color Guessing Game | ☐ Not Completed |
 | 21 | BMI Calculator | ☐ Not Completed |
 | 22 | Anime/Movie Search App (API) | ☐ Not Completed |
