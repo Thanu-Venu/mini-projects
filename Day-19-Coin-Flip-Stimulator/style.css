@@ -1,63 +1,140 @@
-/* General styles */
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    transition: background 0.5s;
 }
 
+/* Main container */
 .container {
     text-align: center;
-    background: white;
-    padding: 30px 50px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    max-width: 400px;
+    width: 90%;
+    transition: transform 0.3s;
 }
 
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* Title */
 h1 {
-    margin-bottom: 20px;
-    color: #333;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size: 28px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-/* Coin container */
+/* Coin */
 .coin-container {
-    margin: 20px 0;
+    margin: 25px 0;
+    perspective: 1000px; /* Better 3D effect */
 }
 
 #coin {
-    width: 150px;
-    height: 150px;
-    transition: transform 0.6s ease;
+    width: 160px;
+    height: 160px;
+    transition: transform 0.8s ease;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    border-radius: 50%;
+    background: white;
 }
 
 /* Buttons */
 button {
-    padding: 10px 25px;
-    margin: 10px;
+    padding: 12px 28px;
+    margin: 12px 8px;
     font-size: 16px;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
-    background: #4CAF50;
+    background: linear-gradient(145deg, #4CAF50, #45a049);
     color: white;
-    transition: background 0.3s;
+    font-weight: 600;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
 }
 
 button:hover {
-    background: #45a049;
+    background: linear-gradient(145deg, #45a049, #3e8e41);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
-/* Result and counter */
+/* Result text */
 .result {
-    font-size: 24px;
-    margin: 15px 0;
-    font-weight: bold;
+    font-size: 26px;
+    margin: 18px 0;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-.counter p {
-    margin: 5px 0;
-    font-size: 18px;
+/* Stats section */
+.stats {
+    margin-top: 20px;
+}
+
+.stats p {
+    margin: 6px 0;
+    font-size: 17px;
+    color: #555;
+    font-weight: 500;
+}
+
+/* History */
+#history {
+    color: #1a73e8;
+    font-weight: 600;
+}
+
+/* Probability & streak */
+#probability, #streak {
+    font-weight: 600;
+    color: #ff5722;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #coin {
+        width: 130px;
+        height: 130px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .stats p {
+        font-size: 15px;
+    }
 }
