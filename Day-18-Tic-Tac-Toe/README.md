@@ -23,13 +23,13 @@ A clean and lightweight **Tic-Tac-Toe game** built using **HTML, CSS, and JavaSc
 
 ## 🗂️ Project Structure
 
-```
+
 /tic-tac-toe
 ├─ index.html      # 🎨 UI layout
-├─ styles.css      # 🎀 Styling + animations
-├─ app.js          # 🧠 Game logic + storage
+├─ style.css      # 🎀 Styling + animations
+├─ script.js          # 🧠 Game logic + storage
 └─ README.md       # 📄 This file
-```
+
 
 ---
 
@@ -82,6 +82,13 @@ A clean and lightweight **Tic-Tac-Toe game** built using **HTML, CSS, and JavaSc
 * 🔊 Sound effects
 * 🌍 Online multiplayer using WebSockets
 * 🌀 Smooth animations for moves
+
+---
+
+## 📸 ScreenShots
+
+<img width="1918" height="1028" alt="image" src="https://github.com/user-attachments/assets/e918c4f5-5903-440c-b20b-700a8e6fdb55" />
+<img width="1917" height="1023" alt="image" src="https://github.com/user-attachments/assets/4ad0b32f-c916-468c-bad8-4d274385e62e" />
 
 ---
 
