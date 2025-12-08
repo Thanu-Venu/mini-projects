@@ -1,81 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
-    background: linear-gradient(135deg, #f9f9f9, #e7e7e7);
-    font-family: Poppins, sans-serif;
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    font-family: "Poppins", sans-serif;
     text-align: center;
     padding: 20px;
+    color: #333;
 }
 
-header h1 {
-    font-size: 2rem;
+.title {
+    font-size: 2.3rem;
     margin-bottom: 5px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 0 10px rgba(255,255,255,0.4);
 }
 
 #rgbDisplay {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
     margin-bottom: 15px;
-}
-
-#controls {
-    margin-bottom: 15px;
-}
-
-#controls button {
-    padding: 8px 15px;
-    margin: 5px;
-    border: none;
-    border-radius: 8px;
-    background: #ddd;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#controls .active {
-    background: #444;
+    font-size: 1.2rem;
     color: white;
 }
 
-#controls button:hover {
-    background: #bbb;
+.score-board span {
+    font-weight: 600;
+}
+
+#controls button,
+.glass-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#controls .active {
+    background: rgba(255, 255, 255, 0.6);
+    color: #333;
+}
+
+#controls button:hover,
+.glass-btn:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.45);
+}
+
+#timer {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
 }
 
 #container {
-    width: 40%;
+    width: 50%;
     margin: 30px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 18px;
 }
 
 .colorBox {
     width: 100%;
     padding-bottom: 100%;
-    border-radius: 12px;
+    border-radius: 15px;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: 0.4s ease;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
 }
 
 .colorBox:hover {
-    transform: scale(1.05);
+    transform: translateY(-8px) scale(1.05);
 }
 
-#resetBtn {
-    margin-top: 20px;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 8px;
-    background: #333;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
+.correct-animation {
+    animation: pop 0.5s ease forwards;
 }
 
-#resetBtn:hover {
-    background: #555;
+@keyframes pop {
+    0% { transform: scale(1); }
+    60% { transform: scale(1.2); }
+    100% { transform: scale(1); }
 }
 
 #message {
-    margin-top: 12px;
+    margin-top: 10px;
     font-size: 1.3rem;
     font-weight: bold;
+    color: white;
 }
