@@ -61,6 +61,12 @@ This project is part of my **30 Days Coding Challenge** 🚀
 
 ---
 
+## 📸 ScreenShots
+<img width="1918" height="997" alt="image" src="https://github.com/user-attachments/assets/6e8c198e-883c-4c70-81dc-08c89f3d696e" />
+<img width="1912" height="1032" alt="image" src="https://github.com/user-attachments/assets/819bf149-40a0-4cb5-925a-fb1705194956" />
+
+---
+
 ⭐ Made with ❤️ as part of my 30 Days Mini Web Project Challenge
 
 ---
