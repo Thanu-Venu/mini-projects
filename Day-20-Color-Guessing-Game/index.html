@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Guessing Game</title>
+    <title>Color Guessing Game – Intermediate</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <h1>🎨 Color Guessing Game</h1>
-        <h2 id="rgbDisplay">RGB( ? , ? , ? )</h2>
+        <h2 id="rgbDisplay">RGB( ?, ?, ? )</h2>
+
+        <div id="controls">
+            <button id="easyBtn">Easy</button>
+            <button id="hardBtn" class="active">Hard</button>
+        </div>
     </header>
 
     <div id="container">
+        <!-- 6 boxes (Easy will show only 3) -->
         <div class="colorBox"></div>
         <div class="colorBox"></div>
         <div class="colorBox"></div>
