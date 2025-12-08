@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Guessing Game – Intermediate</title>
+    <title>Color Guessing Game – Advanced</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>🎨 Color Guessing Game</h1>
+        <h1 class="title">🎨 Color Guessing Game</h1>
         <h2 id="rgbDisplay">RGB( ?, ?, ? )</h2>
+
+        <div class="score-board">
+            <p>Score: <span id="score">0</span></p>
+            <p>Streak: <span id="streak">0</span></p>
+            <p>Best: <span id="bestScore">0</span></p>
+        </div>
 
         <div id="controls">
             <button id="easyBtn">Easy</button>
             <button id="hardBtn" class="active">Hard</button>
+            <button id="timerToggle">Timer OFF</button>
         </div>
+
+        <div id="timer" class="hidden">⏱ Time Left: <span id="time">10</span>s</div>
     </header>
 
     <div id="container">
-        <!-- 6 boxes (Easy will show only 3) -->
         <div class="colorBox"></div>
         <div class="colorBox"></div>
         <div class="colorBox"></div>
@@ -28,7 +36,7 @@
         <div class="colorBox"></div>
     </div>
 
-    <button id="resetBtn">New Colors</button>
+    <button id="resetBtn" class="glass-btn">New Colors</button>
     <p id="message"></p>
 
     <script src="script.js"></script>

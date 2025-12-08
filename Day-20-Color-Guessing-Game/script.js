@@ -5,45 +5,97 @@ const message = document.getElementById("message");
 
 const easyBtn = document.getElementById("easyBtn");
 const hardBtn = document.getElementById("hardBtn");
+const timerToggle = document.getElementById("timerToggle");
+const timerBox = document.getElementById("timer");
+const timeValue = document.getElementById("time");
 
 let colors = [];
 let pickedColor;
-let numberOfBoxes = 6; // default hard mode
+let numberOfBoxes = 6;
 
-// Start the game
+let gameLocked = false;   // ⭐ Prevent actions after correct answer
+let score = 0;
+let streak = 0;
+
+let timeLeft = 10;
+let timerEnabled = false;
+let timerInterval;
+
+// Load best score
+let bestScore = localStorage.getItem("bestScore") || 0;
+document.getElementById("bestScore").textContent = bestScore;
+
+// Start game
 init();
 
 function init() {
+    gameLocked = false; // 🔓 Unlock game at the start of each round
     message.textContent = "";
+
     generateColors(numberOfBoxes);
     setColors();
+    resetTimer();
+}
+
+function resetTimer() {
+    if (!timerEnabled) return;
+
+    clearInterval(timerInterval);
+    timeLeft = 10;
+    timeValue.textContent = timeLeft;
+
+    timerInterval = setInterval(() => {
+        timeLeft--;
+        timeValue.textContent = timeLeft;
+
+        if (timeLeft <= 0) {
+            clearInterval(timerInterval);
+            message.textContent = "⏳ Time's Up!";
+            revealCorrect();
+            gameLocked = true; // Lock game if time finishes
+        }
+    }, 1000);
 }
 
 // ⭐ Mode Buttons
-easyBtn.addEventListener("click", function () {
+easyBtn.onclick = () => {
     numberOfBoxes = 3;
     easyBtn.classList.add("active");
     hardBtn.classList.remove("active");
+
+    colorBoxes.forEach((box, i) => {
+        box.style.display = i < 3 ? "block" : "none";
+    });
+
     init();
+};
 
-    // Hide last 3 boxes
-    for (let i = 3; i < 6; i++) {
-        colorBoxes[i].style.display = "none";
-    }
-});
-
-hardBtn.addEventListener("click", function () {
+hardBtn.onclick = () => {
     numberOfBoxes = 6;
     hardBtn.classList.add("active");
     easyBtn.classList.remove("active");
-    init();
 
-    // Show all boxes
     colorBoxes.forEach(box => box.style.display = "block");
-});
 
-// ⭐ Reset Button
-resetBtn.addEventListener("click", init);
+    init();
+};
+
+// Timer toggle
+timerToggle.onclick = () => {
+    timerEnabled = !timerEnabled;
+    timerToggle.textContent = timerEnabled ? "Timer ON" : "Timer OFF";
+
+    if (timerEnabled) {
+        timerBox.classList.remove("hidden");
+        resetTimer();
+    } else {
+        timerBox.classList.add("hidden");
+        clearInterval(timerInterval);
+    }
+};
+
+// Reset button
+resetBtn.onclick = init;
 
 // 🎨 Generate random colors
 function generateColors(num) {
@@ -55,7 +107,7 @@ function generateColors(num) {
     rgbDisplay.textContent = pickedColor.toUpperCase();
 }
 
-// 🎯 Set colors to boxes
+// 🎯 Set colors on boxes
 function setColors() {
     colorBoxes.forEach((box, index) => {
         if (colors[index]) {
@@ -63,19 +115,67 @@ function setColors() {
             box.style.opacity = "1";
 
             box.onclick = function () {
+                if (gameLocked) return; // ⛔ Prevent any clicks after win/timeout
+
                 if (this.style.backgroundColor === pickedColor) {
-                    message.textContent = "Correct 🎉";
-                    revealCorrect();
+                    correctAnswer();
                 } else {
-                    this.style.opacity = "0";
-                    message.textContent = "Try Again ❌";
+                    wrongAnswer(this);
                 }
             };
         }
     });
 }
 
-// Highlight correct color across all boxes
+// ✔ Correct Answer Logic
+function correctAnswer() {
+    message.textContent = "Correct 🎉";
+
+    clearInterval(timerInterval);
+    gameLocked = true; // stop further clicks
+
+    score++;
+    streak++;
+    updateScoreboard();
+
+    revealCorrect();
+
+    colorBoxes.forEach(box => {
+        box.classList.add("correct-animation");
+        setTimeout(() => box.classList.remove("correct-animation"), 600);
+    });
+
+    // ⭐ Automatically load new colors after 1.5 seconds
+    setTimeout(() => {
+        init();
+    }, 1500);
+}
+
+
+// ✖ Wrong Answer Logic
+function wrongAnswer(box) {
+    if (gameLocked) return;
+
+    message.textContent = "Try Again ❌";
+    streak = 0;
+
+    updateScoreboard();
+    box.style.opacity = "0";
+}
+
+// Update Score Panel
+function updateScoreboard() {
+    document.getElementById("score").textContent = score;
+    document.getElementById("streak").textContent = streak;
+
+    if (score > bestScore) {
+        bestScore = score;
+        localStorage.setItem("bestScore", bestScore);
+        document.getElementById("bestScore").textContent = bestScore;
+    }
+}
+
+// Make all boxes show correct color
 function revealCorrect() {
     colorBoxes.forEach(box => {
         if (box.style.display !== "none") {
@@ -85,7 +185,7 @@ function revealCorrect() {
     });
 }
 
-// 🎲 Random RGB generator
+// Generate RGB color
 function randomColor() {
     const r = Math.floor(Math.random() * 256);
     const g = Math.floor(Math.random() * 256);
