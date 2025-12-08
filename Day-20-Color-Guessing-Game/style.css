@@ -1,0 +1,58 @@
+body {
+    background: #f0f0f0;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+#rgbDisplay {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
+}
+
+#container {
+    width: 60%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.colorBox {
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.colorBox:hover {
+    transform: scale(1.05);
+}
+
+#resetBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#resetBtn:hover {
+    background: #555;
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
