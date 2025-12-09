@@ -103,7 +103,7 @@ By the end of 30 days, I will have a solid portfolio and stronger coding consist
 | 18 | Tic Tac Toe | ✅ Completed |
 | 19 | Coin Flip Simulator | ✅ Completed |
 | 20 | Color Guessing Game | ✅ Completed |
-| 21 | BMI Calculator | ☐ Not Completed |
+| 21 | BMI Calculator | ✅ Completed |
 | 22 | Anime/Movie Search App (API) | ☐ Not Completed |
 | 23 | Currency Converter | ☐ Not Completed |
 | 24 | Random Joke Generator | ☐ Not Completed |
