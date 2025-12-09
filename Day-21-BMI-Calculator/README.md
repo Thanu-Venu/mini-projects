@@ -54,6 +54,13 @@ This BMI Calculator is a perfect mini-project to improve your **JavaScript DOM s
 
 ---
 
+## 📸 ScreenShots
+
+<img width="1917" height="1027" alt="image" src="https://github.com/user-attachments/assets/d9858165-d2ef-4c0a-ab9c-778333a5f613" />
+<img width="1916" height="963" alt="image" src="https://github.com/user-attachments/assets/96e3456b-5180-43ea-9b33-594bc706954e" />
+
+---
+
 ⭐ Made with ❤️ as part of my 30 Days Mini Web Project Challenge
 
 ---
