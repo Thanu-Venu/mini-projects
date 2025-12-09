@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI Calculator</title>
+    <title>BMI Calculator - Intermediate</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,9 +21,13 @@
             <input type="number" id="weight" placeholder="Enter weight">
         </div>
 
-        <button id="calcBtn">Calculate BMI</button>
+        <div class="btn-group">
+            <button id="calcBtn">Calculate</button>
+            <button id="resetBtn" class="reset">Reset</button>
+        </div>
 
         <div class="result" id="result">Your BMI will appear here</div>
+        <div class="category" id="category"></div>
     </div>
 
     <script src="script.js"></script>
