@@ -61,6 +61,7 @@ Simple, fast, and elegant! ✨
 
 ## 📸 ScreenShot
 
+<img width="1915" height="970" alt="image" src="https://github.com/user-attachments/assets/e60cf8f5-f73a-4e5c-8466-1e60b34a3f61" />
 
 ---
 
