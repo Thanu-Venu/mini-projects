@@ -105,8 +105,8 @@ By the end of 30 days, I will have a solid portfolio and stronger coding consist
 | 20 | Color Guessing Game | ✅ Completed |
 | 21 | BMI Calculator | ✅ Completed |
 | 22 | Anime/Movie Search App (API) | ✅ Completed |
-| 23 | Currency Converter | ☐ Not Completed |
-| 24 | Random Joke Generator | ☐ Not Completed |
+| 23 | Currency Converter | ✅ Completed |
+| 24 | Random Joke Generator | ✅ Completed |
 | 25 | News Headlines App | ☐ Not Completed |
 | 26 | Digital World Clock | ☐ Not Completed |
 | 27 | Simple Drawing App | ☐ Not Completed |
