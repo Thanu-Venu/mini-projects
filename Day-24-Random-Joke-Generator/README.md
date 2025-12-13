@@ -56,7 +56,8 @@ A fun and simple **Random Joke Generator** built as part of my **30 Days Coding 
 
 ## 📸 Preview
 
-🖼️ A simple card showing a random joke with a button below it.
+<img width="1918" height="1027" alt="image" src="https://github.com/user-attachments/assets/1e4f0e25-ea37-42f7-a89f-ef248f94d0fb" />
+<img width="1918" height="968" alt="image" src="https://github.com/user-attachments/assets/65813bb6-5983-4304-92d8-f0ccfd104a28" />
 
 ---
 
