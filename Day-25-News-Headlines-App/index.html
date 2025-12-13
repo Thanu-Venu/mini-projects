@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 News Headlines App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>📰 News Headlines</h1>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="🔍 Search news..." />
+      <select id="categorySelect">
+        <option value="general">🌍 General</option>
+        <option value="technology">💻 Technology</option>
+        <option value="business">💼 Business</option>
+        <option value="sports">🏀 Sports</option>
+        <option value="health">🩺 Health</option>
+        <option value="entertainment">🎬 Entertainment</option>
+        <option value="science">🔬 Science</option>
+      </select>
+      <button id="refreshBtn">🔄 Refresh</button>
+      <button id="themeToggle">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="status" class="status">Loading latest headlines...</div>
+    <div id="newsContainer" class="news-container"></div>
+  </main>
+
+  <footer class="footer">
+    <p>Made with ❤️ for Mini Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
