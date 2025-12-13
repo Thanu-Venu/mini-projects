@@ -29,11 +29,11 @@ A simple and clean **News Headlines App** that shows the latest news from around
 
 ## 📂 Project Structure
 
-📁 news-headlines-app
- ┣ 📄 index.html
- ┣ 📄 style.css
- ┣ 📄 script.js
- ┗ 📄 README.md
+- 📁 news-headlines-app
+-  ┣ 📄 index.html
+-  ┣ 📄 style.css
+-  ┣ 📄 script.js
+-  ┗ 📄 README.md
 
 
 ---
