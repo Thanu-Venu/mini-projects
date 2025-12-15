@@ -109,7 +109,7 @@ By the end of 30 days, I will have a solid portfolio and stronger coding consist
 | 24 | Random Joke Generator | ✅ Completed |
 | 25 | News Headlines App | ✅ Completed |
 | 26 | Digital World Clock | ✅ Completed |
-| 27 | Simple Drawing App | ☐ Not Completed |
+| 27 | Simple Drawing App | ✅ Completed |
 | 28 | Stop Motion Animation | ☐ Not Completed |
 | 29 | Form Validation Project | ☐ Not Completed |
 | 30 | Portfolio Landing Page | ☐ Not Completed |
