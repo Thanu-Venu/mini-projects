@@ -66,6 +66,8 @@ This app lets users draw freely on a canvas with different colors and brush size
 ---
 
 ## 📸 ScreenShots
+<img width="1918" height="1025" alt="image" src="https://github.com/user-attachments/assets/c2507046-88d2-4677-9480-d40abd1ebcfb" />
+<img width="1902" height="1022" alt="image" src="https://github.com/user-attachments/assets/9184667b-0db9-4e73-8c30-51330eb35c8d" />
 
 ---
 
