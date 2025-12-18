@@ -1,4 +1,4 @@
-# 🌟 30-Day Mini Web Project Challenge
+## 🌟 30-Day Mini Web Project Challenge
 
 Welcome to my **30-Day Mini Web Project Challenge**!  
 The goal of this challenge is to build 30 small but powerful web projects in 30 days, improving my skills in **HTML, CSS, JavaScript, UI/UX, and API integration**.
@@ -112,7 +112,7 @@ By the end of 30 days, I will have a solid portfolio and stronger coding consist
 | 27 | Simple Drawing App | ✅ Completed |
 | 28 | Stop Motion Animation | ✅ Completed |
 | 29 | Form Validation Project | ✅ Completed |
-| 30 | Portfolio Landing Page | ☐ Not Completed |
+| 30 | Portfolio Landing Page | ✅ Completed |
 
 ---
 
